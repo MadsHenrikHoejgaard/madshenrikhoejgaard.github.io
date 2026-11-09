@@ -29,10 +29,3 @@ For editors and organisers who need a biography in the third person:
 ::: {.bio-third-person}
 Mads Henrik Højgaard is a Danish researcher and analyst of contemporary Greek society, politics and economics. He holds an MSc in Global Studies from Roskilde University (RUC), where he wrote his thesis on social movements and solidarities in Athens, Greece. From 2018 to 2023 he was a coordinator, researcher and editor at the news platform and NGO Are You Syrious, working on global migration politics and the humanitarian field. He also has a broad background in operational management and as a consultant and project manager, certified in IPMA, PRINCE2 and change management.
 :::
-
-## Contact {#contact}
-
-<ul class="contact-lines">
-  <li>Email: <a class="js-email" data-user="{{< var email-user >}}" data-domain="{{< var email-domain >}}" href="#contact">shown when the page loads</a></li>
-  <li><a href="{{< var linkedin >}}">LinkedIn</a></li>
-</ul>
