@@ -1,0 +1,10 @@
+---
+title: "Contact"
+---
+
+You can reach me by email or on LinkedIn.
+
+<ul class="contact-lines">
+  <li>Email: <a class="js-email" data-user="{{< var email-user >}}" data-domain="{{< var email-domain >}}" href="#">shown when the page loads</a></li>
+  <li><a href="{{< var linkedin >}}">LinkedIn</a></li>
+</ul>
