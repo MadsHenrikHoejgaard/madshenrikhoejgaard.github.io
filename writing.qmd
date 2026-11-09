@@ -1,0 +1,23 @@
+---
+title: "Writing"
+listing:
+  id: archive
+  contents:
+    - posts
+    - external.yml
+  template: _listing/ledger.ejs
+  template-params:
+    show-categories: true
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet, categories]
+  categories: true
+  page-size: 100
+  sort-ui: false
+  filter-ui: false
+---
+
+Articles, reports and analysis, newest first. Pieces published elsewhere are listed with the outlet and link to the original. Choose a topic to see only that thread.
+
+::: {#archive}
+:::

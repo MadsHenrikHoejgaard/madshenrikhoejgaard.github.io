@@ -1,0 +1,9 @@
+<script>
+  // Joins the two halves of the email address (set in _variables.yml)
+  // so the full address never appears in the page source.
+  document.querySelectorAll("a.js-email").forEach(function (a) {
+    var address = a.dataset.user + "@" + a.dataset.domain;
+    a.href = "mailto:" + address;
+    a.textContent = address;
+  });
+</script>

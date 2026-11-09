@@ -1,0 +1,38 @@
+---
+title: "About"
+---
+
+<!--
+  ABOUT PAGE. Built from your own text of 9 November 2026, put into
+  full sentences. Nothing has been added beyond your text, except the
+  university and the thesis title and year.
+-->
+
+I hold an MSc in Global Studies from Roskilde University, a degree in politics, economics and sociology in a global perspective, with international relations. Greece has long been my particular interest, and I wrote my thesis, *Prefiguration of Change: Social Solidarities in Athens* (2019), on social movements and solidarities in Greece. My primary academic and journalistic focus is contemporary Greek society, politics and economics.
+
+## Migration and humanitarian work
+
+From 2018 to 2023 I was a coordinator, researcher and editor at Are You Syrious, a news platform and NGO. The work covered global migration politics, international relations and the humanitarian field, in an international team, and included the coordination of volunteers.
+
+## Management and consultancy
+
+I have broad experience as a consultant and project manager, covering line management, project and change management, and consultancy, and broad experience in coaching and mentoring. I am experienced in LEAN management, including internal audits of LEAN management and production. I am certified in IPMA and PRINCE2 project management and in change management, and I have worked in multicultural and international environments. My experience also covers warehouse management, team development, planning and strategy.
+
+## Writing
+
+A full list of articles and reports, including pieces published elsewhere, is on the [Writing](writing.qmd) page.
+
+## Short biography
+
+For editors and organisers who need a biography in the third person:
+
+::: {.bio-third-person}
+Mads Henrik Højgaard is a Danish researcher and analyst of contemporary Greek society, politics and economics. He holds an MSc in Global Studies from Roskilde University, where he wrote his thesis on social movements and solidarities in Greece. From 2018 to 2023 he was a coordinator, researcher and editor at the news platform and NGO Are You Syrious, working on global migration politics and the humanitarian field. He also has a background as a consultant and project manager, certified in IPMA, PRINCE2 and change management.
+:::
+
+## Contact {#contact}
+
+<ul class="contact-lines">
+  <li>Email: <a class="js-email" data-user="{{< var email-user >}}" data-domain="{{< var email-domain >}}" href="#contact">shown when the page loads</a></li>
+  <li><a href="{{< var linkedin >}}">LinkedIn</a></li>
+</ul>

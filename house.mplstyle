@@ -1,0 +1,33 @@
+# Chart style in the house palette. Posts load it with
+#   plt.style.use("../../house.mplstyle")
+# Charts are drawn on parchment so they read the same in light and
+# dark mode.
+
+figure.facecolor: F5F1E8
+axes.facecolor: F5F1E8
+savefig.facecolor: F5F1E8
+savefig.bbox: tight
+
+axes.edgecolor: 5C6B7A
+axes.labelcolor: 5C6B7A
+axes.linewidth: 0.8
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+axes.grid.axis: y
+axes.axisbelow: True
+axes.prop_cycle: cycler('color', ['1F7A8C', '14213D', 'BFDBE0', '5C6B7A'])
+
+grid.color: 5C6B7A
+grid.alpha: 0.22
+grid.linewidth: 0.6
+
+xtick.color: 5C6B7A
+ytick.color: 5C6B7A
+xtick.major.size: 0
+ytick.major.size: 0
+
+text.color: 14213D
+font.size: 10
+legend.frameon: False
+svg.fonttype: path

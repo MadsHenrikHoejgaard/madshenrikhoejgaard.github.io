@@ -1,0 +1,57 @@
+---
+title: "Sample post: how a post on this site works"
+description: "A template to copy. It shows the header, citations, a footnote and a chart drawn from a data file."
+date: 2026-11-09
+categories: [Template]
+draft: true
+---
+
+::: {.callout-note}
+## This post is a template and is never published
+
+The line `draft: true` in the header keeps it off the live site. To write a new post, follow the steps in README.md: make a new folder in `posts`, copy this file into it, and replace the text.
+:::
+
+## The header
+
+The block at the very top of this file, between the two lines of three dashes, is the header. The `title` and `description` appear on the post and in the lists of writing. The `date` decides the order. The `categories` are the topics readers can choose on the Writing page; use the same spelling every time so a topic collects all its posts. When a post is ready, delete the line `draft: true`.
+
+## Citations
+
+A citation is the key of a reference from the file `references.bib`, inside square brackets with an @ sign. A plain citation looks like this [@ostrom1990governing], and one with a page number like this [@ostrom1990governing, p. 90]. Your MA thesis is in the file as a second example [@hojgaard2019prefiguration]. Quarto formats each citation and builds the reference list at the end of the post automatically.
+
+To add a reference, paste its BibTeX entry into `references.bib`. Zotero can export BibTeX, and most journal pages offer it under "Cite" or "Export citation".
+
+## Notes in the margin {#margin-notes}
+
+A footnote is written like this.^[The footnote text goes inside the brackets. On a wide screen it appears in the margin beside the line it belongs to; on a phone it appears below the paragraph.]
+
+## A chart from data
+
+The chart below is drawn by a few lines of Python from the file `data.csv` in this post's folder. Change the numbers in that file and the chart changes when the site is rebuilt. The figure has a label, so the text can refer to it by number: @fig-sample uses placeholder values, for layout only.
+
+```{python}
+#| label: fig-sample
+#| fig-cap: "Placeholder values for layout only. Source: name the dataset and release here, for example a Eurostat dataset code and its update date."
+import pandas as pd
+import matplotlib.pyplot as plt
+
+plt.style.use("../../house.mplstyle")
+
+data = pd.read_csv("data.csv")
+
+fig, ax = plt.subplots(figsize=(7, 3.4))
+ax.plot(data["year"], data["value"], color="#1F7A8C", linewidth=2)
+
+# The latest value is marked in gold: the one point the chart is about
+last = data.iloc[-1]
+ax.scatter([last["year"]], [last["value"]], color="#B8975A", s=40, zorder=3)
+ax.annotate(f'{last["value"]:g}', (last["year"], last["value"]),
+            xytext=(8, 0), textcoords="offset points", va="center")
+
+ax.set_ylabel("Value (placeholder)")
+ax.set_xticks(data["year"][::2])
+plt.show()
+```
+
+To hide the code from readers, nothing extra is needed: the site settings hide it by default.

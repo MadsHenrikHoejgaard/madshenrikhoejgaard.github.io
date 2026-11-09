@@ -1,0 +1,56 @@
+# ------------------------------------------------------------------
+# Site settings. This is the control panel for the whole website.
+# Lines starting with # are notes for you; Quarto ignores them.
+# Indentation (the spaces at the start of lines) matters: keep it.
+# ------------------------------------------------------------------
+
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+  resources:
+    - fonts/
+
+website:
+  title: "Mads Henrik Højgaard"
+  description: "Research and analysis on Greek society, politics and economics."
+  # The site's public address. If you later buy your own domain,
+  # change it here (no slash at the end).
+  site-url: "https://madshenrikhoejgaard.github.io"
+  favicon: favicon.svg
+  open-graph: true
+  search: true
+  navbar:
+    right:
+      - text: Writing
+        href: writing.qmd
+      - text: About
+        href: about.qmd
+  page-footer:
+    left: "© 2026 Mads Henrik Højgaard"
+    right:
+      - text: "RSS feed"
+        href: feed.qmd
+
+format:
+  html:
+    theme:
+      light: theme-light.scss
+      dark: theme-dark.scss
+    respect-user-color-scheme: true
+    css: styles.css
+    include-after-body: _includes/email.html
+    reference-location: margin
+    link-citations: true
+    anchor-sections: false
+
+lang: en
+language:
+  listing-page-field-categories: "Topics"
+bibliography: references.bib
+
+execute:
+  echo: false
+  warning: false
+  message: false

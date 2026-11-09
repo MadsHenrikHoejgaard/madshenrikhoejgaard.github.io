@@ -1,0 +1,22 @@
+---
+title: "RSS feed"
+search: false
+listing:
+  id: feed
+  contents: posts
+  type: table
+  sort: "date desc"
+  feed: true
+---
+
+<!--
+  This page exists to produce the RSS feed, feed.xml. It lists the
+  posts on this site only. Pieces published elsewhere are left out,
+  because Quarto cannot link them correctly in a feed and they already
+  appear in the feeds of their own outlets.
+-->
+
+New posts on this site are published in an RSS feed at [feed.xml](feed.xml). Paste that address into a feed reader to follow new writing.
+
+::: {#feed .d-none}
+:::

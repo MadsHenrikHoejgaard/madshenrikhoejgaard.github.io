@@ -1,0 +1,9 @@
+# Python packages that GitHub installs before building the site.
+# The first four let Quarto run the code in posts; matplotlib draws
+# charts; pandas reads data files.
+nbformat
+nbclient
+ipykernel
+pyyaml
+matplotlib
+pandas

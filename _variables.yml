@@ -1,0 +1,14 @@
+# ------------------------------------------------------------------
+# Your contact details, used on the home page and the About page.
+# Change them here once and both pages update.
+#
+# The email address is split into two parts on purpose. The page
+# joins them in the reader's browser, which keeps the full address
+# out of the page source where spam robots look for it.
+# ------------------------------------------------------------------
+
+email-user: "okapiaman"
+email-domain: "gmail.com"
+# The ø in the address is written as %C3%B8, the form web addresses use
+# for letters outside A to Z. It opens the same page.
+linkedin: "https://www.linkedin.com/in/mads-henrik-h%C3%B8jgaard/"

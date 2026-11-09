@@ -1,0 +1,44 @@
+/*-- scss:defaults --*/
+
+// House palette, dark variant
+$night: #0E1628;     // page background
+$paper: #E8E4DA;     // main text and headings
+$teal: #4FB3C4;      // links, rules (lightened for dark backgrounds)
+$gold: #B8975A;      // accent, unchanged
+$slate: #A3ADB8;     // secondary text (slate lightened for contrast)
+
+$body-bg: $night;
+$body-color: $paper;
+$link-color: $teal;
+$headings-color: $paper;
+$text-muted: $slate;
+$border-color: rgba($paper, 0.16);
+
+$font-family-sans-serif: "Literata", Georgia, "Times New Roman", serif;
+$headings-font-family: "GFS Didot", Didot, "Bodoni 72", Georgia, serif;
+$headings-font-weight: 400;
+$font-size-root: 18px;
+$line-height-base: 1.65;
+
+$callout-color-note: $teal;
+$code-color: $paper;
+$code-bg: rgba($paper, 0.08);
+
+$navbar-bg: $night;
+$navbar-fg: $paper;
+$navbar-hl: $teal;
+$footer-bg: $night;
+$footer-fg: $slate;
+
+/*-- scss:rules --*/
+
+:root {
+  --mh-ink: #{$paper};
+  --mh-muted: #{$slate};
+  --mh-accent: #{$teal};
+  --mh-gold: #{$gold};
+  --mh-tint: #{rgba($teal, 0.18)};
+  --mh-bg: #{$night};
+  --mh-rule: #{rgba($paper, 0.16)};
+  --mh-plate-border: #{rgba($paper, 0.10)};
+}

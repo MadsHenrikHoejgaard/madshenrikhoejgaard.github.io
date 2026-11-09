@@ -1,0 +1,56 @@
+<%
+// ------------------------------------------------------------------
+// Layout for the lists of writing on the home page and the Writing
+// page. You should not need to edit this file.
+//
+// Each entry shows the year, the day and month, the title, the outlet
+// (for pieces published elsewhere), a short description and topics.
+// ------------------------------------------------------------------
+
+// Topics are shown only where the page asks for them
+const showCategories = !!(templateParams && templateParams["show-categories"]);
+
+// "on LinkedIn", "on Substack", but "in" a newspaper or journal
+const outletPrefix = (o) => /^(LinkedIn|Substack|Medium|X|Bluesky|Mastodon)$/i.test(String(o).trim()) ? "on" : "in";
+
+// Splits a formatted date such as "3 Nov 2026" into "3 Nov" and "2026"
+const splitDate = (d) => {
+  const m = String(d || "").trim().match(/^(.*?)\s*(\d{4})$/);
+  return m ? { day: m[1], year: m[2] } : { day: String(d || ""), year: "" };
+};
+%>
+
+::: {.list .ledger}
+
+<% for (const item of items) { const when = splitDate(item.date); %>
+
+::: {.entry <%= metadataAttrs(item) %>}
+
+```{=html}
+<div class="entry-when">
+  <span class="entry-year"><%= when.year %></span>
+  <span class="entry-day"><%= when.day %></span>
+</div>
+<div class="entry-body">
+  <h3 class="entry-title no-anchor listing-title"><a href="<%- item.path %>" class="no-external-icon"><%= item.title %></a></h3>
+<% if (item.outlet) { %>
+  <p class="entry-outlet"><%= outletPrefix(item.outlet) %> <%= item.outlet %></p>
+<% } %>
+<% if (item.description) { %>
+  <p class="entry-description listing-description"><%= item.description %></p>
+<% } %>
+<% if (showCategories && item.categories && item.categories.length) { %>
+  <div class="entry-categories">
+<% for (const category of item.categories) { %>
+    <button type="button" class="entry-category" onclick="window.quartoListingCategory('<%= utils.b64encode(category) %>'); return false;"><%= category %></button>
+<% } %>
+  </div>
+<% } %>
+</div>
+```
+
+:::
+
+<% } %>
+
+:::

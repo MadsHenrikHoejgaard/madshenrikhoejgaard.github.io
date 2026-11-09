@@ -1,0 +1,45 @@
+/*-- scss:defaults --*/
+
+// House palette
+$navy: #14213D;      // titles, headings, main text
+$teal: #1F7A8C;      // links, rules
+$gold: #B8975A;      // the one accent, used sparingly
+$teal-tint: #BFDBE0; // light fills
+$parchment: #F5F1E8; // page background
+$slate: #5C6B7A;     // secondary text
+
+$body-bg: $parchment;
+$body-color: $navy;
+$link-color: $teal;
+$headings-color: $navy;
+$text-muted: $slate;
+$border-color: rgba($navy, 0.16);
+
+$font-family-sans-serif: "Literata", Georgia, "Times New Roman", serif;
+$headings-font-family: "GFS Didot", Didot, "Bodoni 72", Georgia, serif;
+$headings-font-weight: 400;
+$font-size-root: 18px;
+$line-height-base: 1.65;
+
+$callout-color-note: $teal;
+$code-color: $navy;
+$code-bg: rgba($navy, 0.06);
+
+$navbar-bg: $parchment;
+$navbar-fg: $navy;
+$navbar-hl: $teal;
+$footer-bg: $parchment;
+$footer-fg: $slate;
+
+/*-- scss:rules --*/
+
+:root {
+  --mh-ink: #{$navy};
+  --mh-muted: #{$slate};
+  --mh-accent: #{$teal};
+  --mh-gold: #{$gold};
+  --mh-tint: #{$teal-tint};
+  --mh-bg: #{$parchment};
+  --mh-rule: #{rgba($navy, 0.16)};
+  --mh-plate-border: #{rgba($navy, 0.12)};
+}

@@ -1,0 +1,45 @@
+# ------------------------------------------------------------------
+# PIECES PUBLISHED ELSEWHERE
+#
+# Each entry starts with a dash and lists one article or report that
+# lives on another website. It appears in your lists of writing and
+# links to the original.
+#
+# To add a piece: copy one whole entry (from the dash down to the
+# categories line), paste it at the top, and change the details.
+# Keep the spaces at the start of each line exactly as they are.
+# Dates are written year-month-day.
+#
+# Topic names to reuse, spelled the same way every time:
+#   Institutional accountability, Inequality, Housing, Media freedom,
+#   Political economy, Fiscal policy, Memory and history,
+#   Foreign policy, Environment and commons
+# ------------------------------------------------------------------
+
+- title: "Greece Before the Winter and the Vote: The Situation as It Stands"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greece-before-winter-vote-situation-stands-mads-henrik-h%C3%B8jgaard-lo7oe/"
+  date: 2026-10-21
+  description: "Where Greece stands ahead of the heating season and the election expected in spring 2027: prices, rents, relief measures and the scenarios that will shape the vote."
+  categories: [Political economy, Fiscal policy]
+
+- title: "Independent Media Platforms and Outlets in Greece - A Working List"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/independent-media-platforms-outlets-greece-working-list-h%C3%B8jgaard-rsm5e/"
+  date: 2026-07-22
+  description: "A personal selection of Greek news outlets funded by readers, cooperatives and grants rather than large media groups, with each one's focus and political leaning."
+  categories: [Media freedom]
+
+- title: "The Anatomy of a Selective Success Story"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/anatomy-selective-success-story-mads-henrik-h%C3%B8jgaard-iik9f/"
+  date: 2026-06-11
+  description: "A causal account of structural inequality in Greece, 2015–2025, tracing how tourism-led growth feeds income concentration and housing inflation."
+  categories: [Inequality, Political economy, Housing]
+
+- title: "Café Neon: An Allegory of the Greek Economy"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/caf%C3%A9-neon-allegory-greek-economy-mads-henrik-h%C3%B8jgaard-a2ilf/"
+  date: 2025-10-23
+  description: "A fictional Athens café, with its owner, staff, regulars and tourists, as an allegory of how the Greek economy came to rest on low-productivity services."
+  categories: [Political economy, Inequality]

@@ -1,0 +1,331 @@
+/* ------------------------------------------------------------------
+   Layout and typography shared by the light and dark themes.
+   Colours come from the theme files (theme-light.scss and
+   theme-dark.scss) through the --mh-... variables, so you only
+   change colours there.
+   ------------------------------------------------------------------ */
+
+/* ---------- Typefaces ----------
+   Both are stored in the fonts folder of this site rather than loaded
+   from Google, so readers' browsers make no request to a third party.
+   GFS Didot comes from the Greek Font Society and carries the Didot
+   tradition of Greek printing. Literata is a book face made for long
+   reading on screens. Both cover Latin and Greek, including polytonic.
+   Licences: fonts/OFL-GFS-Didot.txt and fonts/OFL-Literata.txt. */
+
+@font-face {
+  font-family: "GFS Didot";
+  src: url("fonts/GFSDidot-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("fonts/Literata-Variable.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("fonts/Literata-Italic-Variable.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ---------- Base ---------- */
+
+body {
+  background-color: var(--mh-bg);
+  color: var(--mh-ink);
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .title {
+  font-weight: 400;
+  letter-spacing: 0.005em;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+h3 { font-size: 1.3rem; }
+
+p, li { hyphens: manual; }
+
+a { text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 2px solid var(--mh-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection { background: var(--mh-tint); }
+
+/* ---------- Navigation and footer ---------- */
+
+.navbar { border-bottom: 1px solid var(--mh-rule); }
+
+.navbar-title {
+  font-family: "GFS Didot", Didot, Georgia, serif;
+  font-size: 1.3rem;
+  letter-spacing: 0.01em;
+}
+
+.navbar .nav-link { font-size: 0.95rem; }
+
+@media (max-width: 575px) {
+  .navbar-title { font-size: 1rem; letter-spacing: 0; }
+}
+
+.nav-footer {
+  border-top: 1px solid var(--mh-rule);
+  font-size: 0.85rem;
+}
+
+/* ---------- Home page ---------- */
+
+.hero { margin: 1.5rem 0 3.5rem; }
+
+.hero-name {
+  font-family: "GFS Didot", Didot, "Bodoni 72", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(3.1rem, 10vw, 6.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.005em;
+  color: var(--mh-ink);
+  margin: 0 0 1.4rem;
+}
+
+.hero-name span { display: block; }
+
+.hero-role {
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.45;
+  color: var(--mh-muted);
+  max-width: 34ch;
+  margin: 0 0 1.8rem;
+  padding-top: 1.2rem;
+  border-top: 2px solid var(--mh-gold);
+  width: fit-content;
+}
+
+.hero-intro { max-width: 60ch; }
+
+.areas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 2.5rem;
+}
+
+.areas li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--mh-rule);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-head h2 { margin: 0; }
+.section-head a { font-size: 0.95rem; white-space: nowrap; }
+
+.contact-lines { list-style: none; padding: 0; }
+.contact-lines li { padding: 0.15rem 0; }
+
+/* ---------- Writing list (home page and archive) ---------- */
+
+.ledger { margin: 0; padding: 0; }
+
+.ledger .entry {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr;
+  column-gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--mh-rule);
+}
+
+.ledger .entry:last-child { border-bottom: 1px solid var(--mh-rule); }
+
+.entry-when { line-height: 1.1; }
+
+.entry-year {
+  font-family: "GFS Didot", Didot, Georgia, serif;
+  font-size: 1.65rem;
+  color: var(--mh-accent);
+  display: block;
+}
+
+.entry-day {
+  font-size: 0.8rem;
+  color: var(--mh-muted);
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.entry-title {
+  font-family: "Literata", Georgia, serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 0.3rem;
+}
+
+.entry-title a { color: var(--mh-ink); text-decoration: none; }
+.entry-title a:hover { color: var(--mh-accent); text-decoration: underline; }
+
+.entry-outlet {
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--mh-muted);
+  margin: 0 0 0.35rem;
+}
+
+.entry-description {
+  font-size: 0.95rem;
+  color: var(--mh-muted);
+  margin: 0;
+  max-width: 62ch;
+}
+
+.entry-categories { margin-top: 0.5rem; }
+
+.entry-category {
+  display: inline;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--mh-accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-right: 0.9rem;
+  cursor: pointer;
+}
+
+.entry-category:hover { text-decoration: underline; }
+
+@media (max-width: 575px) {
+  .ledger .entry { grid-template-columns: 1fr; row-gap: 0.4rem; }
+  .entry-when { display: flex; gap: 0.6rem; align-items: baseline; }
+  .entry-day { margin-top: 0; }
+}
+
+/* Category list in the margin of the archive page */
+.quarto-listing-category-title {
+  font-family: "GFS Didot", Didot, Georgia, serif;
+  font-size: 1.15rem;
+}
+
+.quarto-listing-category .category { font-size: 0.85rem; }
+.quarto-listing-category .category.active { color: var(--mh-accent); font-weight: 600; }
+
+/* ---------- Article pages ---------- */
+
+#title-block-header .title {
+  font-size: clamp(2.1rem, 5vw, 3rem);
+  line-height: 1.08;
+}
+
+#title-block-header .description {
+  font-style: italic;
+  color: var(--mh-muted);
+  font-size: 1.15rem;
+}
+
+#title-block-header .quarto-title-meta-heading,
+#title-block-header .block-title {
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-size: 0.8rem;
+  color: var(--mh-muted);
+}
+
+#title-block-header .quarto-category {
+  text-transform: none;
+  letter-spacing: 0;
+  border: 1px solid var(--mh-rule);
+  color: var(--mh-muted);
+  font-size: 0.8rem;
+}
+
+#quarto-appendix h2, #quarto-appendix .appendix-heading {
+  font-size: 1.15rem;
+  border-bottom: none;
+}
+
+/* Charts sit on their own light plate in both themes */
+.cell-output-display img,
+.quarto-figure img {
+  border: 1px solid var(--mh-plate-border);
+  border-radius: 4px;
+}
+
+figcaption, .figure-caption {
+  font-size: 0.88rem;
+  color: var(--mh-muted);
+}
+
+.column-margin, .margin-aside, .footnote-ref + .aside {
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.column-margin [id^="fn"] p,
+.column-margin [id^="fn"] { color: var(--mh-muted) !important; }
+
+#refs, .references { font-size: 0.92rem; }
+
+/* Code boxes, such as the ready-made BibTeX citation, stay legible in
+   dark mode */
+body.quarto-dark pre,
+body.quarto-dark pre code,
+body.quarto-dark div.sourceCode { color: var(--mh-ink); background-color: var(--mh-tint); }
+
+blockquote {
+  border-left: 2px solid var(--mh-gold);
+  padding-left: 1.1rem;
+  color: var(--mh-muted);
+  font-style: italic;
+}
+
+/* Notes on draft templates. These never appear on the live site
+   because draft posts are not published. */
+.callout.callout-style-default { font-size: 0.92rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; transition: none !important; }
+}
+
+/* Third-person biography on the About page, set off so it is easy to
+   find and copy */
+.bio-third-person {
+  border-left: 2px solid var(--mh-gold);
+  padding: 0.2rem 0 0.2rem 1.1rem;
+  margin: 0.5rem 0 1rem;
+  max-width: 62ch;
+}
+
+.bio-third-person p { margin: 0; }

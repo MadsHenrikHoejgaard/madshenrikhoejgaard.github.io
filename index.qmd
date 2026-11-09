@@ -1,0 +1,64 @@
+---
+pagetitle: "Mads Henrik Højgaard"
+title-block-style: none
+listing:
+  id: latest
+  contents:
+    - posts
+    - external.yml
+  template: _listing/ledger.ejs
+  sort: "date desc"
+  max-items: 5
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  HOME PAGE. The introduction is built from your own text of 9 November
+  2026. The longer version is on the About page.
+-->
+
+
+::: {.hero}
+
+<h1 class="hero-name"><span>Mads Henrik</span><span>Højgaard</span></h1>
+
+<p class="hero-role">Researcher and analyst of Greek society, politics and economics</p>
+
+::: {.hero-intro}
+My academic and journalistic work is focused on contemporary Greek society, politics and economics, with a background in global studies, migration politics and international relations. I am a deeply curious human with a constant need to take in new knowledge and to analyze and learn.
+
+[More about me](about.qmd)
+:::
+
+:::
+
+## Areas of work
+
+<ul class="areas">
+  <li>Greek society</li>
+  <li>Institutional accountability</li>
+  <li>Structural inequality</li>
+  <li>Housing</li>
+  <li>Media freedom</li>
+  <li>Political economy</li>
+  <li>Other areas</li>
+</ul>
+
+::: {.section-head}
+## Latest writing
+
+[All writing](writing.qmd)
+:::
+
+::: {#latest}
+:::
+
+## Contact
+
+<ul class="contact-lines">
+  <li>Email: <a class="js-email" data-user="{{< var email-user >}}" data-domain="{{< var email-domain >}}" href="about.qmd#contact">shown when the page loads</a></li>
+  <li><a href="{{< var linkedin >}}">LinkedIn</a></li>
+</ul>

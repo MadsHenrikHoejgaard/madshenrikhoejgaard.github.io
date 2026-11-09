@@ -1,0 +1,15 @@
+# Settings shared by every post in this folder.
+# Your name is split into given and family name so that citations
+# come out as "Højgaard, Mads Henrik".
+author:
+  - name:
+      given: "Mads Henrik"
+      family: "Højgaard"
+title-block-banner: false
+# Adds a "Citation" note with a ready-made reference at the end of each
+# post, so others can cite your work correctly.
+citation: true
+google-scholar: true
+# Dates are shown as 9 November 2026
+date-format: "D MMMM YYYY"
+fig-format: svg
