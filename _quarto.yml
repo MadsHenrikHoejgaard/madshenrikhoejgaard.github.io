@@ -29,6 +29,8 @@ website:
         href: about.qmd
       - text: Contact
         href: contact.qmd
+      - text: Dansk
+        href: dansk.qmd
   page-footer:
     left: "© 2026 Mads Henrik Højgaard"
     right:
