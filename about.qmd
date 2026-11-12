@@ -8,15 +8,19 @@ title: "About"
   university and the thesis title and year.
 -->
 
-I hold an MSc in Global Studies. Politics, economics and sociology in a global perspective. Greece has long been my particular interest, and I wrote my thesis, *Prefiguration of Change: Social Solidarities in Athens* (2019), on social movements and solidarities in Greece. My primary academic and journalistic focus is contemporary Greek society, politics and economics.
+A curious human being, passionate for learning, development and insight.
 
-## Migration and humanitarian work
+I am researching and writing about a range of subjects, mainly economics, politics and society.
 
-From 2018 to 2023 I was a coordinator, researcher and editor at Are You Syrious, a news platform and NGO. The work covered global migration politics, international relations and the humanitarian field, in an international team, and included the coordination of volunteers.
+I hold an MSc in Global Studies. Politics, economics and sociology in a global perspective. Greece has long been my main interest and field of study, and I wrote my thesis, *Prefiguration of Change: Social Solidarities in Athens* (2019), on social movements and solidarities in Greece. My primary academic and journalistic focus is contemporary Greek society, politics and economics. In particular I have been researching into what I have coined the Double Economy of Greece, the discrepancy between the macroeconomic success and the lived experience of the population. 
+
+## Advocacy and humanitarian work
+
+From 2018 to 2023 I was a coordinator, researcher and editor at the International organisation Are You Syrious, a news and advocacy platform and NGO. The work covered global migration politics, international relations and the humanitarian field, in an international team, and included the coordination of volunteers and the publishing of a daily newsletter to more than 50.000 subscribers.
 
 ## Management and consultancy
 
-I have broad experience in operational management and as a consultant and project manager, covering line management (COO & CQO), project and change management. Also consultancy and a broad experience in coaching and mentoring. I am experienced in LEAN management, including as a lead auditor of LEAN management and production. I am certified in IPMA and PRINCE2 project management and in change management, and I have worked in multicultural and international environments. My experience also covers warehouse management, team development, planning and strategy.
+I have a broad experience through more than 25 years in operational management and as a consultant and project manager, covering line management (COO & CQO), project and change management, mainly within the field of logistics. Also experience in audit, consultancy and a broad experience in coaching and mentoring. I am experienced in LEAN management, including as a lead auditor of LEAN management and production. I am certified in IPMA and PRINCE2 project management and in change management, and I have worked in multicultural and international environments. My experience also covers warehouse management, team development, planning and strategy.
 
 ## Writing
 
@@ -27,5 +31,5 @@ A list of articles and other writings, is on the [Writing](writing.qmd) page.
 For editors and organisers who need a biography in the third person:
 
 ::: {.bio-third-person}
-Mads Henrik Højgaard is a Danish researcher and analyst of contemporary Greek society, politics and economics. He holds an MSc in Global Studies from Roskilde University (RUC), where he wrote his thesis on social movements and solidarities in Athens, Greece. From 2018 to 2023 he was a coordinator, researcher and editor at the news platform and NGO Are You Syrious, working on global migration politics and the humanitarian field. He also has a broad background in operational management and as a consultant and project manager, certified in IPMA, PRINCE2 and change management.
+Mads Henrik Højgaard is a Danish researcher and analyst of contemporary Greek society, politics and economics. He holds an MSc in Global Studies from Roskilde University (RUC), where he wrote his thesis on social movements and solidarities in Athens, Greece. From 2018 to 2023 he was a coordinator, researcher and editor at the news platform and NGO Are You Syrious, working on global migration politics and the humanitarian field. He also has a broad background in logistics, operational management and as a consultant and project manager, certified in IPMA, PRINCE2 and change management.
 :::
