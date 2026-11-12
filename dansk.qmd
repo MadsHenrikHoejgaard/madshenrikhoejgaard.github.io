@@ -10,19 +10,19 @@ lang: da
 
 [Read in English](about.qmd)
 
-Et nysgerrigt menneske med en passion for læring, udvikling og indsigt.
+Et nysgerrigt menneske med passion for læring, udvikling og indsigt.
 
-Jeg researcher og skriver om en række emner, primært økonomi, politik og samfund.
+Jeg researcher og skriver om en række emner, primært økonomi, politik og samfundsforhold.
 
-Jeg har en kandidatgrad (MSc) i Global Studies med politik, økonomi og sociologi i et globalt perspektiv. Grækenland har længe været min primære interesse og mit fagområde, og jeg skrev mit speciale, *Prefiguration of Change: Social Solidarities in Athens* (2019), om sociale bevægelser og solidaritet i Grækenland. Mit akademiske og journalistiske fokus er først og fremmest det nutidige græske samfund, politik og økonomi. Jeg har især undersøgt det, jeg har kaldt Grækenlands dobbeltøkonomi: kløften mellem den makroøkonomiske succes og befolkningens levede erfaring.
+Jeg har en kandidatgrad (MSc) i Globale Studier med politik, økonomi og sociologi i et globalt perspektiv som omdrejningspunkt. Grækenland har længe været mit primære interessefelt og mit fagområde, og jeg skrev mit speciale, *Prefiguration of Change: Social Solidarities in Athens* (2019), om sociale bevægelser og solidaritet i Grækenland. Mit akademiske og journalistiske fokus er først og fremmest det græske samfund af i dag, herunder politiske og økonomiske forhold. Jeg har især været optaget af det fænomen, jeg har kaldt for Grækenlands dobbeltøkonomi: kløften mellem den betydelige makroøkonomiske succes efter kriseårene og på den anden side befolkningens oplevelse af øget materiel fattigdom.
 
-## Fortalervirksomhed og humanitært arbejde
+## Research og humanitært arbejde
 
-Fra 2018 til 2023 var jeg koordinator, researcher og redaktør i den internationale organisation Are You Syrious, en nyheds- og fortalerplatform og NGO. Arbejdet omfattede global migrationspolitik, international politik og det humanitære felt i et internationalt team, herunder koordinering af frivillige og udgivelse af et dagligt nyhedsbrev til mere end 50.000 abonnenter.
+Fra 2018 til 2023 var jeg koordinator, researcher og redaktør i den internationale organisation Are You Syrious, en platform for viden om migrations- og flygtningeforhold og NGO. Arbejdet omfattede global migrationspolitik, international politik og det humanitære felt i et internationalt team, herunder koordinering af frivillige og udgivelse af et dagligt nyhedsbrev til mere end 50.000 modtagere.
 
 ## Ledelse og rådgivning
 
-Jeg har mere end 25 års bred erfaring med driftsledelse og som konsulent og projektleder, herunder linjeledelse (COO og CQO) samt projekt- og forandringsledelse, primært inden for logistik. Jeg har også erfaring med audit og rådgivning og bred erfaring med coaching og mentoring. Jeg har erfaring med LEAN-ledelse, blandt andet som lead auditor af LEAN-ledelse og -produktion. Jeg er certificeret i IPMA- og PRINCE2-projektledelse og i forandringsledelse, og jeg har arbejdet i multikulturelle og internationale miljøer. Min erfaring omfatter desuden lagerledelse, teamudvikling, planlægning og strategi.
+Jeg har mere end 25 års bred erfaring med driftsledelse og som konsulent og projektleder, herunder som COO og CQO, samt projekt- og forandringsledelse, primært inden for logistik. Jeg har også erfaring med audit og rådgivning og bred erfaring med coaching og mentoring. Jeg har erfaring med LEAN-ledelse, blandt andet som lead auditor af LEAN-ledelse og -produktion. Jeg er certificeret i IPMA- og PRINCE2-projektledelse og i forandringsledelse, og jeg har arbejdet i multikulturelle og internationale miljøer. Min erfaring omfatter desuden lagerledelse, teamudvikling, planlægning og strategi.
 
 ## Artikler
 
@@ -33,7 +33,7 @@ Mine artikler og andre tekster er samlet på siden [Writing](writing.qmd). De er
 Til redaktører og arrangører, der har brug for en biografi i tredje person:
 
 ::: {.bio-third-person}
-Mads Henrik Højgaard er dansk researcher og analytiker med speciale i det nutidige græske samfund, politik og økonomi. Han har en kandidatgrad (MSc) i Global Studies fra Roskilde Universitet (RUC), hvor han skrev speciale om sociale bevægelser og solidaritet i Athen. Fra 2018 til 2023 var han koordinator, researcher og redaktør hos nyhedsplatformen og NGO'en Are You Syrious med fokus på global migrationspolitik og det humanitære felt. Han har desuden en bred baggrund inden for logistik og driftsledelse og som konsulent og projektleder og er certificeret i IPMA, PRINCE2 og forandringsledelse.
+Mads Henrik Højgaard er dansk researcher og analytiker med speciale i græske samfundsforhold, politik og økonomi. Han har en kandidatgrad (MSc) i Globale Studier fra Roskilde Universitet (RUC), hvor han skrev speciale om sociale bevægelser og solidaritet i Athen. Fra 2018 til 2023 var han koordinator, researcher og redaktør hos nyhedsplatformen og NGO'en Are You Syrious med fokus på global migrationspolitik og det humanitære felt. Han har desuden en bred baggrund inden for logistik og driftsledelse og som konsulent og projektleder og er certificeret i IPMA, PRINCE2 og forandringsledelse.
 :::
 
 ## Kontakt
