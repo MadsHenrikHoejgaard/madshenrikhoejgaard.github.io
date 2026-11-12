@@ -329,3 +329,34 @@ blockquote {
 }
 
 .bio-third-person p { margin: 0; }
+
+/* ---------- Portrait on the home page ----------
+   On wide screens the photo sits to the right of the introduction,
+   level with the gold rule. On phones it sits between your name and
+   the introduction. It is cropped to a 4:5 portrait shape: if your
+   face sits too high or too low, change the 25% in object-position
+   (0% keeps the top of the photo, 50% the middle). */
+
+.hero-with-photo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14rem;
+  column-gap: 3rem;
+  align-items: start;
+}
+
+.hero-photo p { margin: 0; }
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border: 1px solid var(--mh-plate-border);
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .hero-with-photo { grid-template-columns: 1fr; }
+  .hero-photo { order: -1; width: 9.5rem; margin-bottom: 1.6rem; }
+}
