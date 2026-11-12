@@ -8,6 +8,8 @@ title: "About"
   university and the thesis title and year.
 -->
 
+[Læs på dansk](dansk.qmd)
+
 A curious human being, passionate for learning, development and insight.
 
 I am researching and writing about a range of subjects, mainly economics, politics and society.
