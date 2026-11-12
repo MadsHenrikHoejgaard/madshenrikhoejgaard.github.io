@@ -1,0 +1,44 @@
+---
+title: "Om mig"
+lang: da
+---
+
+<!--
+  DANSK SIDE. Oversat fra den engelske About-side (about.qmd) den
+  12. november 2026. Ændrer du den engelske side, så ret også her.
+-->
+
+[Read in English](about.qmd)
+
+Et nysgerrigt menneske med en passion for læring, udvikling og indsigt.
+
+Jeg researcher og skriver om en række emner, primært økonomi, politik og samfund.
+
+Jeg har en kandidatgrad (MSc) i Global Studies med politik, økonomi og sociologi i et globalt perspektiv. Grækenland har længe været min primære interesse og mit fagområde, og jeg skrev mit speciale, *Prefiguration of Change: Social Solidarities in Athens* (2019), om sociale bevægelser og solidaritet i Grækenland. Mit akademiske og journalistiske fokus er først og fremmest det nutidige græske samfund, politik og økonomi. Jeg har især undersøgt det, jeg har kaldt Grækenlands dobbeltøkonomi: kløften mellem den makroøkonomiske succes og befolkningens levede erfaring.
+
+## Fortalervirksomhed og humanitært arbejde
+
+Fra 2018 til 2023 var jeg koordinator, researcher og redaktør i den internationale organisation Are You Syrious, en nyheds- og fortalerplatform og NGO. Arbejdet omfattede global migrationspolitik, international politik og det humanitære felt i et internationalt team, herunder koordinering af frivillige og udgivelse af et dagligt nyhedsbrev til mere end 50.000 abonnenter.
+
+## Ledelse og rådgivning
+
+Jeg har mere end 25 års bred erfaring med driftsledelse og som konsulent og projektleder, herunder linjeledelse (COO og CQO) samt projekt- og forandringsledelse, primært inden for logistik. Jeg har også erfaring med audit og rådgivning og bred erfaring med coaching og mentoring. Jeg har erfaring med LEAN-ledelse, blandt andet som lead auditor af LEAN-ledelse og -produktion. Jeg er certificeret i IPMA- og PRINCE2-projektledelse og i forandringsledelse, og jeg har arbejdet i multikulturelle og internationale miljøer. Min erfaring omfatter desuden lagerledelse, teamudvikling, planlægning og strategi.
+
+## Artikler
+
+Mine artikler og andre tekster er samlet på siden [Writing](writing.qmd). De er skrevet på engelsk.
+
+## Kort biografi
+
+Til redaktører og arrangører, der har brug for en biografi i tredje person:
+
+::: {.bio-third-person}
+Mads Henrik Højgaard er dansk researcher og analytiker med speciale i det nutidige græske samfund, politik og økonomi. Han har en kandidatgrad (MSc) i Global Studies fra Roskilde Universitet (RUC), hvor han skrev speciale om sociale bevægelser og solidaritet i Athen. Fra 2018 til 2023 var han koordinator, researcher og redaktør hos nyhedsplatformen og NGO'en Are You Syrious med fokus på global migrationspolitik og det humanitære felt. Han har desuden en bred baggrund inden for logistik og driftsledelse og som konsulent og projektleder og er certificeret i IPMA, PRINCE2 og forandringsledelse.
+:::
+
+## Kontakt
+
+<ul class="contact-lines">
+  <li>E-mail: <a class="js-email" data-user="{{< var email-user >}}" data-domain="{{< var email-domain >}}" href="#">vises, når siden indlæses</a></li>
+  <li><a href="{{< var linkedin >}}">LinkedIn</a></li>
+</ul>
