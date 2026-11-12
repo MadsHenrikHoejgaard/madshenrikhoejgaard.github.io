@@ -11,9 +11,10 @@
 # Dates are written year-month-day.
 #
 # Topic names to reuse, spelled the same way every time:
-#   Institutional accountability, Inequality, Housing, Media freedom,
-#   Political economy, Fiscal policy, Memory and history,
-#   Foreign policy, Environment and commons
+#   Art, Banks, Environment and commons, Feminism, Fiscal policy,
+#   History, Housing, Inequality, International relations, Justice,
+#   Literature, Media freedom, Migration, Political economy,
+#   Politics, Society, Sociology
 # ------------------------------------------------------------------
 
 - title: "Living Well With Little. Ikaria, Degrowth and Two Perspectives on the Commons"
@@ -23,12 +24,54 @@
   description: "Real-existing Degrowth on a Greek Island"
   categories: [Political economy, Environment and commons]
 
+- title: "Greece Before the Vote II: A Different Settlement"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greece-before-vote-ii-different-settlement-mads-henrik-h%C3%B8jgaard-fcsse/"
+  date: 2026-10-28
+  description: "An alternative economic and fiscal politics proposal"
+  categories: [Political economy, Fiscal policy, Inequality]
+
+- title: "The Kaisariani That Never Happened on Paros"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/kaisariani-never-happened-paros-mads-henrik-h%C3%B8jgaard-wa08e/"
+  date: 2026-10-23
+  description: "A human story from the wartime Greek island of Paros"
+  categories: [History]
+
 - title: "Greece Before the Winter and the Vote: The Situation as It Stands"
   outlet: "LinkedIn"
   path: "https://www.linkedin.com/pulse/greece-before-winter-vote-situation-stands-mads-henrik-h%C3%B8jgaard-lo7oe/"
   date: 2026-10-21
   description: "Where Greece stands ahead of the heating season and the election expected in spring 2027: prices, rents, relief measures and the scenarios that will shape the vote."
   categories: [Political economy, Fiscal policy]
+
+- title: "Alekos Fassianos - A Greek Artist and the Myth of the Neighbourhood"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/alekos-fassianos-greek-artist-myth-neighbourhood-h%C3%B8jgaard-4w1oe/"
+  date: 2026-10-12
+  description: "Biographical article about the Greek artist Alekos Fassianos"
+  categories: [Art]
+
+- title: "Excellence Is the Label. Kakistocracy Is How You Get Incorporated."
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/excellence-label-kakistocracy-how-you-get-mads-henrik-h%C3%B8jgaard-xynse/"
+  date: 2026-08-14
+  description: "An introduction to Katerina Mavridou's essay on Greece's manufactured self-image, and an imagination of what it looks like from inside one particular café in Athens."
+  categories: [Political economy, Inequality, Sociology]
+
+- title: "The Witnesses Who Cannot Be Called - Greece has closed its Predator spyware file for a third time."
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/witnesses-who-cannot-called-greece-has-closed-its-spyware-h%C3%B8jgaard-eclve/"
+  date: 2026-08-08
+  description: "On the stalling of the Predator spyware case at the Greek Supreme Court"
+  categories: [Politics, Justice]
+
+- title: "Is There an Expiry Date on Historical Justice? German debts to Greece, 1941–2026"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/expiry-date-historical-justice-german-debts-greece-h%C3%B8jgaard-zahee/"
+  date: 2026-07-27
+  description: "On German war reparations to Greece"
+  categories: [History, International relations]
 
 - title: "Independent Media Platforms and Outlets in Greece - A Working List"
   outlet: "LinkedIn"
@@ -37,6 +80,48 @@
   description: "A personal selection of Greek news outlets funded by readers, cooperatives and grants rather than large media groups, with each one's focus and political leaning."
   categories: [Media freedom]
 
+- title: "A Recovery of Banks, Not by Banks"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/recovery-banks-mads-henrik-h%C3%B8jgaard-jbkje/"
+  date: 2026-07-21
+  description: "How the Greek banking turnaround works, and who is paying for it"
+  categories: [Political economy, Fiscal policy, Banks, Inequality]
+
+- title: "One Harbour, Two Economies - A July Audit from Symi"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/one-harbour-two-economies-july-audit-from-symi-mads-henrik-h%C3%B8jgaard-ce6ee/"
+  date: 2026-07-19
+  description: "Water, rooms and arrivals: the month the Double Economy can be photographed"
+  categories: [Political economy, Environment and commons]
+
+- title: "The Receipt"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/receipt-mads-henrik-h%C3%B8jgaard-sglme/"
+  date: 2026-07-17
+  description: "A day in the fiscal life of the other Greece"
+  categories: [Political economy, Fiscal policy, Inequality]
+
+- title: "Paola Revenioti, 1958–2026"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/paola-revenioti-19582026-mads-henrik-h%C3%B8jgaard-0gg7e/"
+  date: 2026-07-10
+  description: "Obituary for a Greek activist"
+  categories: [History]
+
+- title: "Café Neon Revisited - A (not so) Short Story and A Hypothesis about the Structure of the Greek Economy"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/caf%C3%A9-neon-revisited-so-short-story-hypothesis-greek-h%C3%B8jgaard-ls9we/"
+  date: 2026-07-07
+  description: "A café in Athens as an image of the Greek economic structure"
+  categories: [Political economy, Fiscal policy, Inequality]
+
+- title: "Objects in an Envelope. Greek Names. The #StolenMemory Project"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/objects-envelope-greek-names-stolenmemory-project-h%C3%B8jgaard-470se/"
+  date: 2026-06-28
+  description: "Wartime archaeology and memories"
+  categories: [History]
+
 - title: "The Anatomy of a Selective Success Story"
   outlet: "LinkedIn"
   path: "https://www.linkedin.com/pulse/anatomy-selective-success-story-mads-henrik-h%C3%B8jgaard-iik9f/"
@@ -44,9 +129,149 @@
   description: "A causal account of structural inequality in Greece, 2015–2025, tracing how tourism-led growth feeds income concentration and housing inflation."
   categories: [Inequality, Political economy, Housing]
 
+- title: "Greece's Tax Triumph and Its Missing Chapter: What the IMF Celebrates, and What It Cannot Ask"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greeces-tax-triumph-its-missing-chapter-what-imf-cannot-h%C3%B8jgaard-4dlbe/"
+  date: 2026-05-15
+  description: "A new IMF report: Tax Administration Reform in Greece"
+  categories: [Political economy, Fiscal policy]
+
+- title: "Greece's Dual Economy and Dual Investment. Who Is the Recovery Really For?"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greeces-dual-economy-investment-who-recovery-really-h%C3%B8jgaard-b7i7e/"
+  date: 2026-04-16
+  description: "The Greek housing crisis and the Double Economy"
+  categories: [Political economy, Housing, Inequality]
+
+- title: "The Malaise Beneath the Surface in Greece - A Convergence of Crises"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/malaise-beneath-surface-greece-convergence-crises-h%C3%B8jgaard-upwfe/"
+  date: 2026-04-04
+  description: "Greece's convergence of institutional crises"
+  categories: [Politics, Justice]
+
+- title: "Greece's War on Its Own Watchdogs: The Criminalisation of Humanitarian Defenders at Europe's Border - The Olsen and Dimitras NGO cases"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greeces-war-its-own-watchdogs-criminalisation-europes-h%C3%B8jgaard-khsee/"
+  date: 2026-03-19
+  description: "Migration and refugees: Greece's war on its own watchdogs"
+  categories: [Migration]
+
+- title: "The Tempi Railway Disaster - Three Years of Grief, Investigation, and the Struggle for Accountability"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/tempi-railway-disaster-three-years-grief-struggle-h%C3%B8jgaard-cb0of/"
+  date: 2026-02-28
+  description: "A tribute to the victims and their families on the occasion of the third anniversary of the Tempi railway disaster"
+  categories: [Society, Justice]
+
+- title: "The 200 of Kaisariani. First of May, 1944"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/200-kaisariani-first-may-1944-mads-henrik-h%C3%B8jgaard-qcmbf/"
+  date: 2026-02-16
+  description: "The discovery of photos casts new light on the execution of Greek resistance fighters in May 1944"
+  categories: [History]
+
+- title: "When Athens burned its Christmas tree. The December 2008 uprising"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/when-athens-burned-its-christmas-tree-december-2008-h%C3%B8jgaard-dualc/"
+  date: 2025-12-24
+  description: "A flashback to the Christmas protests in Athens in 2008"
+  categories: [Political economy, History]
+
+- title: "Cavafy’s Glasses: The Self is in the Lens, Not the Journey"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/cavafys-glasses-self-lens-journey-mads-henrik-h%C3%B8jgaard-mvtmf/"
+  date: 2025-12-04
+  description: "Literary essay on the Greek author Constantine Cavafy"
+  categories: [History, Literature]
+
+- title: "Greece’s ‘Success Story’. Economic Spin or Pierrakakis’ Eurogroup Campaign Launch?"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greeces-success-story-economic-spin-pierrakakis-launch-h%C3%B8jgaard-4hhpf/"
+  date: 2025-11-28
+  description: "The Greek “Success Story” and the Double Economy"
+  categories: [Political economy, Fiscal policy, Inequality]
+
+- title: "ΕΛΤΑ - Greek Mail - What is Ahead?"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/%CE%B5%CE%BB%CF%84%CE%B1-greek-mail-what-ahead-mads-henrik-h%C3%B8jgaard-fxcaf/"
+  date: 2025-11-03
+  description: "Background, Present Status and Performance of Hellenic Post (ELTA)"
+  categories: [Society, Political economy]
+
 - title: "Café Neon: An Allegory of the Greek Economy"
   outlet: "LinkedIn"
   path: "https://www.linkedin.com/pulse/caf%C3%A9-neon-allegory-greek-economy-mads-henrik-h%C3%B8jgaard-a2ilf/"
   date: 2025-10-23
   description: "A fictional Athens café, with its owner, staff, regulars and tourists, as an allegory of how the Greek economy came to rest on low-productivity services."
   categories: [Political economy, Inequality]
+
+- title: "The Mitsotakis Doctrine: Power, Spectacle, and Simulation"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/mitsotakis-doctrine-power-spectacle-simulation-mads-henrik-h%C3%B8jgaard-camef/"
+  date: 2025-10-18
+  description: "Greek politics in a sociological perspective"
+  categories: [Sociology, Politics]
+
+- title: "Panos Routsis and the Hunger Strike"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/panos-routsis-hunger-strike-mads-henrik-h%C3%B8jgaard-2thnf/"
+  date: 2025-10-09
+  description: "The Father Who Starved the State: A Personal Vigil in the Heart of Athens"
+  categories: [Politics, Justice]
+
+- title: "Greece’s “Remarkable Recovery”: A Discrepancy Between Optimistic Projections and Lived Reality"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/greeces-remarkable-recovery-discrepancy-between-lived-h%C3%B8jgaard-ximqf/"
+  date: 2025-07-01
+  description: "The Greek “Success Story” and the Double Economy"
+  categories: [Political economy, Fiscal policy]
+
+- title: "From Popular Protests to Social Movements in Greece and Serbia Following Infrastructure Tragedies: A Comparison"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/from-popular-protests-social-movements-greece-serbia-h%C3%B8jgaard-lihtf/"
+  date: 2025-04-04
+  description: "Protests and social movements in Greece and Serbia"
+  categories: [Politics, Justice, Sociology]
+
+- title: "John Maynard Keynes and the Bloomsbury Group: An Intellectual and Artistical Symbiosis in Early 20th Century Britain"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/john-maynard-keynes-bloomsbury-group-intellectual-early-h%C3%B8jgaard-qq21f/"
+  date: 2025-03-31
+  description: "Biographical article about the economist John Maynard Keynes"
+  categories: [History, Political economy, Literature]
+
+- title: "Italian Architecture in the Dodecanese Islands (1912-1947)"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/italian-architecture-dodecanese-islands-1912-1947-h%C3%B8jgaard-hodof/"
+  date: 2025-01-16
+  description: "Greek island history and architecture"
+  categories: [History]
+
+- title: "The “Success Story” Narrative of Greece’s Bailouts: A Discrepancy Between Ideology and Lived Reality"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/success-story-narrative-greeces-bailouts-discrepancy-between-1r68f/"
+  date: 2024-12-17
+  description: "The Greek “Success Story” and the Double Economy"
+  categories: [Political economy, Fiscal policy, Inequality]
+
+- title: "Political Turmoil in Greece: Rifts in SYRIZA and Nea Demokratia"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/political-turmoil-greece-rifts-syriza-nea-demokratia-h%C3%B8jgaard-ubblf/"
+  date: 2024-11-25
+  description: "Internal uproar in the Greek political parties"
+  categories: [Politics]
+
+- title: "Anafi - A Cycladic exile and a distant island community with a rich political and migrational history"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/anafi-cycladic-exile-distant-island-community-rich-history/"
+  date: 2023-07-08
+  description: "Travel and history on the Greek island of Anafi"
+  categories: [History]
+
+- title: "Where women rules - Olymbos - A unique society on the Greek island of Karpathos"
+  outlet: "LinkedIn"
+  path: "https://www.linkedin.com/pulse/where-women-rules-olymbos-unique-society-greek-island-h%C3%B8jgaard/"
+  date: 2023-06-12
+  description: "Travel and history on the Greek island of Karpathos"
+  categories: [History, Feminism]
