@@ -1,0 +1,139 @@
+---
+title: "The Double Economy"
+description: "One surplus, two Greeces."
+fig-format: svg
+listing:
+  id: series
+  contents:
+    - ../external.yml
+    - ../posts
+  include:
+    series: "double-economy"
+  template: ../_listing/ledger.ejs
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  THE DOUBLE ECONOMY: the signature page of the series.
+  DRAFT TEXT for you to rewrite in your own words. The definition in
+  the first paragraph is taken from your About page.
+
+  The diagram is written out below between the lines ```{=html} and
+  ```. To change a word in it, change the text between > and <. To
+  add a piece under a channel, copy one <li>...</li> line and change
+  the link and the title.
+
+  The chart reads the file projects/data/housing-overburden.csv, which
+  holds the Eurostat figures (dataset ilc_lvho07a). In the flag column,
+  e means that Eurostat marks the value as an estimate.
+-->
+
+The Double Economy is the term I use for the discrepancy between Greece's macroeconomic success and the lived experience of its population.
+
+Both levels are real, and they are measured in different places. One is the Greece of the headline figures: growth, primary surpluses, bank profits and tourist arrivals. The other is the Greece of the household budget: the rent, the supermarket bill, the water on an island in July. The success story is told from the first; lived reality is felt in the second. As the subtitle of one of the pieces puts it, you cannot see the rent and the supermarket bill from the Acropolis.
+
+The series follows the channels that should carry the success from one level to the other, and asks where they fail to: housing, taxes, the banks and the islands.
+
+::: {.column-page}
+```{=html}
+<figure class="de-figure">
+  <div class="board de-board">
+    <p class="de-level de-level-top"><span class="de-level-name">The success story</span> <span class="de-level-note">what the headline figures show</span></p>
+    <ol class="de-channels">
+      <li class="de-channel">
+        <h3 class="de-channel-name">Housing</h3>
+        <p class="de-node de-top" data-level="The success story">Tourism and investment</p>
+        <span class="de-link" aria-hidden="true"></span>
+        <p class="de-node de-bottom" data-level="Lived reality">Rents</p>
+        <ul class="de-pieces">
+          <li><a href="https://www.linkedin.com/pulse/anatomy-selective-success-story-mads-henrik-h%C3%B8jgaard-iik9f/">The Anatomy of a Selective Success Story</a></li>
+          <li><a href="https://www.linkedin.com/pulse/greeces-dual-economy-investment-who-recovery-really-h%C3%B8jgaard-b7i7e/">Greece's Dual Economy and Dual Investment</a></li>
+        </ul>
+      </li>
+      <li class="de-channel">
+        <h3 class="de-channel-name">Taxes</h3>
+        <p class="de-node de-top" data-level="The success story">The primary surplus</p>
+        <span class="de-link" aria-hidden="true"></span>
+        <p class="de-node de-bottom" data-level="Lived reality">The receipt</p>
+        <ul class="de-pieces">
+          <li><a href="https://www.linkedin.com/pulse/one-surplus-two-greeces-mads-henrik-h%C3%B8jgaard-pnwoe/">One Surplus, Two Greeces</a></li>
+          <li><a href="https://www.linkedin.com/pulse/receipt-mads-henrik-h%C3%B8jgaard-sglme/">The Receipt</a></li>
+          <li><a href="https://www.linkedin.com/pulse/greeces-tax-triumph-its-missing-chapter-what-imf-cannot-h%C3%B8jgaard-4dlbe/">Greece's Tax Triumph and Its Missing Chapter</a></li>
+        </ul>
+      </li>
+      <li class="de-channel">
+        <h3 class="de-channel-name">Banks</h3>
+        <p class="de-node de-top" data-level="The success story">The banking turnaround</p>
+        <span class="de-link" aria-hidden="true"></span>
+        <p class="de-node de-bottom" data-level="Lived reality">Who pays for it</p>
+        <ul class="de-pieces">
+          <li><a href="https://www.linkedin.com/pulse/recovery-banks-mads-henrik-h%C3%B8jgaard-jbkje/">A Recovery of Banks, Not by Banks</a></li>
+        </ul>
+      </li>
+      <li class="de-channel">
+        <h3 class="de-channel-name">Islands</h3>
+        <p class="de-node de-top" data-level="The success story">Arrivals</p>
+        <span class="de-link" aria-hidden="true"></span>
+        <p class="de-node de-bottom" data-level="Lived reality">Water and rooms</p>
+        <ul class="de-pieces">
+          <li><a href="https://www.linkedin.com/pulse/one-harbour-two-economies-july-audit-from-symi-mads-henrik-h%C3%B8jgaard-ce6ee/">One Harbour, Two Economies</a></li>
+        </ul>
+      </li>
+    </ol>
+    <p class="de-level de-level-bottom"><span class="de-level-name">Lived reality</span> <span class="de-level-note">what the household budget shows</span></p>
+  </div>
+  <figcaption>The four channels the series follows between the two levels, with the pieces that examine each.</figcaption>
+</figure>
+```
+:::
+
+## One measure of the gap
+
+The share of people who spend 40% or more of their disposable income on housing, which Eurostat calls the housing cost overburden rate. Greece's rate has come down since 2016, from 40.5% to 26.4% in 2025, but it has been the highest of any EU member state in every year of the series. In 2025 it was more than three times the figure for the EU as a whole, 7.6%.
+
+```{python}
+#| label: fig-overburden
+#| fig-cap: "Housing cost overburden rate: share of the population living in households that spend 40% or more of their disposable income on housing, Greece and the EU (27 member states), 2016–2025. Source: Eurostat, EU-SILC, dataset ilc_lvho07a, accessed November 2026. EU values for 2016–2018 are Eurostat estimates. Greece's rate was the highest of the member states with data in every year; in 2021 one member state has no figure."
+import pandas as pd
+import matplotlib.pyplot as plt
+
+plt.style.use("../house.mplstyle")
+
+data = pd.read_csv("data/housing-overburden.csv")
+
+fig, ax = plt.subplots(figsize=(7, 3.6))
+for area, colour, width in [("EU", "#1F7A8C", 1.8), ("Greece", "#14213D", 2.4)]:
+    s = data[data["area"] == area]
+    ax.plot(s["year"], s["value"], color=colour, linewidth=width, marker="o", markersize=4)
+    first, last = s.iloc[0], s.iloc[-1]
+    # the first and the latest value are written on the chart
+    for row in (first, last):
+        ax.annotate(f'{row["value"]:.1f}%', (row["year"], row["value"]), xytext=(0, 9),
+                    textcoords="offset points", ha="center", fontsize=9, color=colour)
+    ax.annotate(area, (last["year"], last["value"]), xytext=(14, 0),
+                textcoords="offset points", va="center", fontsize=10,
+                color=colour, fontweight="bold")
+
+# Greece's latest value is marked in gold: the point the chart is about
+g = data[data["area"] == "Greece"].iloc[-1]
+ax.scatter([g["year"]], [g["value"]], color="#B8975A", s=46, zorder=3)
+
+ax.set_ylim(0, 45)
+years = sorted(data["year"].unique())
+ax.set_xlim(years[0] - 0.8, years[-1] + 1.1)
+ax.set_xticks(years)
+ax.set_xticklabels([str(y) if (y - years[0]) % 3 == 0 or y == years[-1] else "" for y in years])
+ax.yaxis.set_major_formatter(lambda v, pos: f"{v:.0f}%")
+plt.show()
+```
+
+## The series
+
+::: {#series}
+:::
+
+The [Café Neon](cafe-neon.qmd) stories approach the same question as fiction.

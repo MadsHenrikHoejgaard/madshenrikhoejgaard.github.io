@@ -9,8 +9,10 @@ project:
   render:
     - "*.qmd"
     - "posts/**/*.qmd"
+    - "projects/*.qmd"
   resources:
     - fonts/
+    - images/
 
 website:
   title: "Mads Henrik Højgaard"
@@ -25,6 +27,8 @@ website:
     right:
       - text: Writing
         href: writing.qmd
+      - text: Projects
+        href: projects.qmd
       - text: About
         href: about.qmd
       - text: Contact
@@ -46,6 +50,9 @@ format:
     css: styles.css
     include-after-body: _includes/email.html
     reference-location: margin
+    # No mathematical formulas on this site, so no formula library is
+    # loaded from another website.
+    html-math-method: plain
     link-citations: true
     anchor-sections: false
 

@@ -360,3 +360,322 @@ blockquote {
   .hero-with-photo { grid-template-columns: 1fr; }
   .hero-photo { order: -1; width: 9.5rem; margin-bottom: 1.6rem; }
 }
+
+/* ==================================================================
+   THE BOARD
+   The deep blue and chalk white of the LinkedIn banner. Used for the
+   menu bar (set in the theme files), the band at the top of the home
+   page, the Double Economy diagram and the map. It looks the same in
+   light and dark mode, like the banner.
+   ================================================================== */
+
+.navbar { border-bottom: 0; }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { text-decoration: underline; text-underline-offset: 0.35em; text-decoration-thickness: 1px; }
+
+.board {
+  background-color: var(--mh-board);
+  color: var(--mh-chalk);
+}
+
+.board a { color: var(--mh-chalk-link); }
+.board :focus-visible { outline-color: var(--mh-chalk-link); }
+
+/* ---------- Home page band ---------- */
+
+/* The band starts right under the menu bar and runs edge to edge.
+   Quarto also writes the page title as a heading of its own; on the
+   home page your name in the band is the heading, so that copy is
+   hidden. */
+body.home #quarto-content,
+body.home #quarto-content > main { padding-top: 0; margin-top: 0; }
+body.home header#title-block-header { display: none; }
+
+.hero-band {
+  background-image: url("images/aegean-chalk.svg");
+  background-repeat: no-repeat;
+  background-size: auto 118%;
+  background-position: right max(-14rem, calc(50% - 50rem)) center;
+  padding-block: 3rem 3.4rem;
+  margin-bottom: 0;
+  /* the content lines up with the text column below the band */
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.hero-band > .board-inner { grid-column: body-content-start / body-content-end; min-width: 0; }
+
+.hero-band .hero-name { color: var(--mh-chalk); }
+.hero-band .hero { margin: 0; }
+.hero-band .hero-role { color: var(--mh-chalk-muted); }
+.hero-band .hero-intro { color: var(--mh-chalk); max-width: 58ch; }
+.hero-band .hero-links p { display: flex; flex-wrap: wrap; column-gap: 1.6rem; row-gap: 0.3rem; margin-bottom: 0; }
+.hero-band .hero-links a { white-space: nowrap; }
+.hero-band .hero-photo img { border-color: rgba(238, 235, 227, 0.32); }
+
+@media (max-width: 767px) {
+  .hero-band {
+    background-size: auto 17rem;
+    background-position: right -5rem top 10.5rem;
+    padding-block: 2rem 2.4rem;
+  }
+}
+
+/* ---------- Figures under the band ---------- */
+
+.tally {
+  list-style: none;
+  padding: 0;
+  margin: 2.6rem 0 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 1.8rem;
+  row-gap: 1.6rem;
+}
+
+.tally-item {
+  border-top: 1px solid var(--mh-rule);
+  padding-top: 0.9rem;
+  min-width: 0;
+}
+
+.tally-item a { color: inherit; text-decoration: none; display: block; }
+.tally-item a:hover .tally-label { text-decoration: underline; color: var(--mh-accent); }
+
+.tally-num {
+  display: block;
+  font-family: "GFS Didot", Didot, "Bodoni 72", Georgia, serif;
+  font-size: 2.7rem;
+  line-height: 1;
+  color: var(--mh-accent);
+  font-variant-numeric: lining-nums;
+}
+
+.tally-label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--mh-muted);
+}
+
+@media (max-width: 767px) {
+  .tally { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ---------- Projects page ---------- */
+
+.series-block { padding: 1.4rem 0 1.6rem; border-top: 1px solid var(--mh-rule); min-width: 0; }
+
+.series-title { margin: 0 0 0.25rem; font-size: 1.6rem; }
+.series-title a { color: var(--mh-ink); text-decoration: none; }
+.series-title a:hover { color: var(--mh-accent); text-decoration: underline; }
+
+.series-meta { font-size: 0.85rem; font-style: italic; color: var(--mh-muted); margin: 0 0 0.6rem; }
+.series-summary { margin: 0 0 0.8rem; max-width: 60ch; }
+
+.series-latest-label { font-size: 0.8rem; color: var(--mh-muted); margin: 0 0 0.2rem; }
+.series-latest { list-style: none; padding: 0; margin: 0 0 0.7rem; font-size: 0.93rem; }
+.series-latest li { padding: 0.15rem 0; }
+.series-latest a { color: var(--mh-ink); }
+.series-more { margin: 0; font-size: 0.92rem; }
+
+/* The first series, the Double Economy, sits on the board */
+.series-lead {
+  background-color: var(--mh-board);
+  color: var(--mh-chalk);
+  border-top: 0;
+  border-radius: 2px;
+  padding: 1.8rem 1.8rem 1.9rem;
+  margin: 1.6rem 0 1rem;
+}
+.series-lead .series-title { font-size: 2.1rem; }
+.series-lead .series-title a,
+.series-lead .series-latest a { color: var(--mh-chalk); }
+.series-lead a { color: var(--mh-chalk-link); }
+.series-lead .series-meta,
+.series-lead .series-latest-label { color: var(--mh-chalk-muted); }
+.series-lead .series-summary { font-size: 1.08rem; }
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 2.4rem;
+}
+
+@media (max-width: 767px) {
+  .series-grid { grid-template-columns: 1fr; }
+  .series-lead { padding: 1.4rem 1.2rem 1.5rem; }
+}
+
+/* ---------- Map of the writing ---------- */
+
+.map-figure {
+  margin: 1rem 0 0.5rem;
+  background-color: var(--mh-board);
+  border-radius: 2px;
+  padding: 0.6rem;
+}
+
+.map-svg { display: block; width: 100%; height: auto; }
+.map-land { fill: rgba(238, 235, 227, 0.07); stroke: rgba(238, 235, 227, 0.62); stroke-width: 1.1; stroke-linejoin: round; }
+.map-neighbours { fill: rgba(238, 235, 227, 0.03); stroke: rgba(238, 235, 227, 0.34); stroke-width: 1; stroke-linejoin: round; }
+.map-glow { fill: var(--mh-glow); fill-opacity: 0.28; }
+.map-dot { fill: var(--mh-gold); stroke: var(--mh-chalk); stroke-width: 1.5; }
+.map-label {
+  fill: var(--mh-chalk);
+  font-family: "Literata", Georgia, serif;
+  font-size: 21px;
+  paint-order: stroke;
+  stroke: var(--mh-board);
+  stroke-width: 5px;
+  stroke-linejoin: round;
+}
+.map-mark:hover .map-dot, .map-mark:focus .map-dot { fill: var(--mh-chalk); }
+.map-mark:hover .map-label, .map-mark:focus .map-label { text-decoration: underline; }
+.map-mark:focus { outline: none; }
+.map-mark:focus-visible .map-glow { fill-opacity: 0.7; }
+
+.map-figure figcaption {
+  color: var(--mh-chalk-muted);
+  font-size: 0.78rem;
+  padding: 0.3rem 0.5rem 0.2rem;
+}
+
+@media (max-width: 575px) {
+  .map-label { font-size: 30px; stroke-width: 7px; }
+  .map-figure { padding: 0.2rem; }
+}
+
+.map-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  column-gap: 2rem;
+  margin-top: 1.4rem;
+}
+
+.map-place { border-top: 1px solid var(--mh-rule); padding: 0.8rem 0 1rem; min-width: 0; scroll-margin-top: 5rem; }
+.map-place:target h3 { color: var(--mh-accent); }
+.map-place h3 { font-family: "GFS Didot", Didot, Georgia, serif; font-size: 1.2rem; margin: 0 0 0.4rem; }
+.map-place ul { list-style: none; padding: 0; margin: 0; font-size: 0.92rem; }
+.map-place li { padding: 0.18rem 0; }
+.map-place a { color: var(--mh-ink); }
+.map-year { color: var(--mh-muted); font-size: 0.82rem; white-space: nowrap; }
+
+/* ---------- The Double Economy diagram ---------- */
+
+.de-figure { margin: 2rem 0 2.4rem; }
+
+.de-board {
+  border-radius: 2px;
+  padding: 1.6rem 1.8rem 1.4rem;
+  background-image: radial-gradient(ellipse at 30% 20%, rgba(68, 98, 174, 0.28), transparent 60%);
+}
+
+.de-level { margin: 0; }
+.de-level-name { font-family: "GFS Didot", Didot, Georgia, serif; font-size: 1.45rem; color: var(--mh-chalk); }
+.de-level-note { font-style: italic; font-size: 0.88rem; color: var(--mh-chalk-muted); margin-left: 0.5rem; }
+.de-level-top { padding-bottom: 0.9rem; border-bottom: 1px solid rgba(238, 235, 227, 0.22); }
+.de-level-bottom { padding-top: 0.9rem; border-top: 1px solid rgba(238, 235, 227, 0.22); }
+
+.de-channels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: auto auto 5rem auto auto;
+  column-gap: 1.6rem;
+  position: relative;
+}
+
+/* The dashed chalk line across the middle: the gap between the levels */
+.de-channels::before {
+  content: "";
+  grid-column: 1 / -1;
+  grid-row: 3;
+  align-self: center;
+  border-top: 2px dashed rgba(238, 235, 227, 0.45);
+}
+
+.de-channel {
+  display: grid;
+  grid-row: 1 / span 5;
+  grid-template-rows: subgrid;
+  min-width: 0;
+}
+.de-channel:nth-child(1) { grid-column: 1; }
+.de-channel:nth-child(2) { grid-column: 2; }
+.de-channel:nth-child(3) { grid-column: 3; }
+.de-channel:nth-child(4) { grid-column: 4; }
+
+.de-channel-name {
+  font-family: "Literata", Georgia, serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: var(--mh-chalk-muted);
+  margin: 1rem 0 0.2rem;
+}
+
+.de-node {
+  font-family: "GFS Didot", Didot, Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: var(--mh-chalk);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* A chalk arrow from the success story down to lived reality */
+.de-link {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin-left: 0.6rem;
+  width: 1.2rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 80' preserveAspectRatio='none'%3E%3Cpath d='M10 2 C 11 20, 9 40, 10.5 62' fill='none' stroke='%23EEEBE3' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M4 58 L10.5 72 L16 58' fill='none' stroke='%23EEEBE3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+}
+
+.de-bottom { padding-top: 0.15rem; }
+
+.de-pieces { list-style: none; padding: 0; margin: 0.8rem 0 1.2rem; font-size: 0.84rem; line-height: 1.4; }
+.de-pieces li { padding: 0.2rem 0; }
+
+/* "the gap", written in gold at the end of the dashed line */
+.de-channels::after {
+  content: "the gap";
+  grid-column: 4;
+  grid-row: 3;
+  justify-self: end;
+  align-self: center;
+  padding: 0 0 0 0.6rem;
+  background-color: var(--mh-board);
+  font-family: "Literata", Georgia, serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--mh-gold);
+}
+
+.de-figure figcaption { font-size: 0.88rem; color: var(--mh-muted); margin-top: 0.6rem; }
+
+@media (max-width: 859px) {
+  .de-board { padding: 1.2rem 1.1rem 1rem; }
+  .de-channels { grid-template-columns: 1fr; grid-template-rows: none; }
+  .de-channels::before,
+  .de-channels::after { display: none; }
+  .de-channel,
+  .de-channel:nth-child(n) { grid-column: 1; grid-row: auto; display: block; border-top: 1px solid rgba(238, 235, 227, 0.16); }
+  .de-channel:first-child { border-top: 0; }
+  .de-node::before {
+    content: attr(data-level);
+    display: block;
+    font-family: "Literata", Georgia, serif;
+    font-size: 0.75rem;
+    font-style: italic;
+    color: var(--mh-chalk-muted);
+    margin-bottom: 0.1rem;
+  }
+  .de-link { height: 2.6rem; margin-block: 0.3rem; }
+  .de-level-note { display: block; margin-left: 0; }
+}

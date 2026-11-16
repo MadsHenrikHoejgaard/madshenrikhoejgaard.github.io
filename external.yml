@@ -6,7 +6,7 @@
 # links to the original.
 #
 # To add a piece: copy one whole entry (from the dash down to the
-# categories line), paste it at the top, and change the details.
+# blank line after it), paste it at the top, and change the details.
 # Keep the spaces at the start of each line exactly as they are.
 # Dates are written year-month-day.
 #
@@ -15,6 +15,17 @@
 #   History, Housing, Inequality, International relations, Justice,
 #   Literature, Media freedom, Migration, Political economy,
 #   Politics, Society, Sociology
+#
+# Two optional lines put a piece on the Projects page:
+#   series: [double-economy]   the series it belongs to; a piece can
+#                              belong to more than one, separated by
+#                              commas. The series are listed in
+#                              _data/series.yml.
+#   place: athens              where the piece is set, for the map.
+#                              The places are listed in
+#                              _data/places.yml. For more than
+#                              one place: place: [kos, leros]
+# Leave either line out if it does not apply.
 # ------------------------------------------------------------------
 - title: "One Surplus, Two Greeces"
   outlet: "LinkedIn"
@@ -22,6 +33,7 @@
   date: 2026-11-16
   description: "You Cannot See the Rent and the Supermarket Bill From the Acropolis: A discussion of the Double Economy based on an article from WSJ"
   categories: [Political economy, Fiscal policy, Inequality]
+  series: [double-economy]
 
 - title: "Living Well With Little. Ikaria, Degrowth and Two Perspectives on the Commons"
   outlet: "LinkedIn"
@@ -29,6 +41,8 @@
   date: 2026-11-11
   description: "Real-existing Degrowth on a Greek Island"
   categories: [Political economy, Environment and commons]
+  series: [islands]
+  place: ikaria
 
 - title: "Greece Before the Vote II: A Different Settlement"
   outlet: "LinkedIn"
@@ -36,6 +50,7 @@
   date: 2026-10-28
   description: "An alternative economic and fiscal politics proposal"
   categories: [Political economy, Fiscal policy, Inequality]
+  series: [double-economy]
 
 - title: "The Kaisariani That Never Happened on Paros"
   outlet: "LinkedIn"
@@ -43,6 +58,8 @@
   date: 2026-10-23
   description: "A human story from the wartime Greek island of Paros"
   categories: [History]
+  series: [memory, islands]
+  place: paros
 
 - title: "Greece Before the Winter and the Vote: The Situation as It Stands"
   outlet: "LinkedIn"
@@ -50,6 +67,7 @@
   date: 2026-10-21
   description: "Where Greece stands ahead of the heating season and the election expected in spring 2027: prices, rents, relief measures and the scenarios that will shape the vote."
   categories: [Political economy, Fiscal policy]
+  series: [double-economy]
 
 - title: "Alekos Fassianos - A Greek Artist and the Myth of the Neighbourhood"
   outlet: "LinkedIn"
@@ -57,6 +75,7 @@
   date: 2026-10-12
   description: "Biographical article about the Greek artist Alekos Fassianos"
   categories: [Art]
+  series: [portraits]
 
 - title: "Excellence Is the Label. Kakistocracy Is How You Get Incorporated."
   outlet: "LinkedIn"
@@ -64,6 +83,8 @@
   date: 2026-08-14
   description: "An introduction to Katerina Mavridou's essay on Greece's manufactured self-image, and an imagination of what it looks like from inside one particular café in Athens."
   categories: [Political economy, Inequality, Sociology]
+  series: [cafe-neon]
+  place: athens
 
 - title: "The Witnesses Who Cannot Be Called - Greece has closed its Predator spyware file for a third time."
   outlet: "LinkedIn"
@@ -71,6 +92,7 @@
   date: 2026-08-08
   description: "On the stalling of the Predator spyware case at the Greek Supreme Court"
   categories: [Politics, Justice]
+  series: [accountability]
 
 - title: "Is There an Expiry Date on Historical Justice? German debts to Greece, 1941–2026"
   outlet: "LinkedIn"
@@ -78,6 +100,7 @@
   date: 2026-07-27
   description: "On German war reparations to Greece"
   categories: [History, International relations]
+  series: [memory]
 
 - title: "Independent Media Platforms and Outlets in Greece - A Working List"
   outlet: "LinkedIn"
@@ -85,6 +108,7 @@
   date: 2026-07-22
   description: "A personal selection of Greek news outlets funded by readers, cooperatives and grants rather than large media groups, with each one's focus and political leaning."
   categories: [Media freedom]
+  series: [accountability]
 
 - title: "A Recovery of Banks, Not by Banks"
   outlet: "LinkedIn"
@@ -92,6 +116,7 @@
   date: 2026-07-21
   description: "How the Greek banking turnaround works, and who is paying for it"
   categories: [Political economy, Fiscal policy, Banks, Inequality]
+  series: [double-economy]
 
 - title: "One Harbour, Two Economies - A July Audit from Symi"
   outlet: "LinkedIn"
@@ -99,6 +124,8 @@
   date: 2026-07-19
   description: "Water, rooms and arrivals: the month the Double Economy can be photographed"
   categories: [Political economy, Environment and commons]
+  series: [double-economy, islands]
+  place: symi
 
 - title: "The Receipt"
   outlet: "LinkedIn"
@@ -106,6 +133,7 @@
   date: 2026-07-17
   description: "A day in the fiscal life of the other Greece"
   categories: [Political economy, Fiscal policy, Inequality]
+  series: [double-economy]
 
 - title: "Paola Revenioti, 1958–2026"
   outlet: "LinkedIn"
@@ -113,6 +141,7 @@
   date: 2026-07-10
   description: "Obituary for a Greek activist"
   categories: [History]
+  series: [portraits]
 
 - title: "Café Neon Revisited - A (not so) Short Story and A Hypothesis about the Structure of the Greek Economy"
   outlet: "LinkedIn"
@@ -120,6 +149,8 @@
   date: 2026-07-07
   description: "A café in Athens as an image of the Greek economic structure"
   categories: [Political economy, Fiscal policy, Inequality]
+  series: [cafe-neon]
+  place: athens
 
 - title: "Objects in an Envelope. Greek Names. The #StolenMemory Project"
   outlet: "LinkedIn"
@@ -127,6 +158,7 @@
   date: 2026-06-28
   description: "Wartime archaeology and memories"
   categories: [History]
+  series: [memory]
 
 - title: "The Anatomy of a Selective Success Story"
   outlet: "LinkedIn"
@@ -134,6 +166,7 @@
   date: 2026-06-11
   description: "A causal account of structural inequality in Greece, 2015–2025, tracing how tourism-led growth feeds income concentration and housing inflation."
   categories: [Inequality, Political economy, Housing]
+  series: [double-economy]
 
 - title: "Greece's Tax Triumph and Its Missing Chapter: What the IMF Celebrates, and What It Cannot Ask"
   outlet: "LinkedIn"
@@ -141,6 +174,7 @@
   date: 2026-05-15
   description: "A new IMF report: Tax Administration Reform in Greece"
   categories: [Political economy, Fiscal policy]
+  series: [double-economy]
 
 - title: "Greece's Dual Economy and Dual Investment. Who Is the Recovery Really For?"
   outlet: "LinkedIn"
@@ -148,6 +182,7 @@
   date: 2026-04-16
   description: "The Greek housing crisis and the Double Economy"
   categories: [Political economy, Housing, Inequality]
+  series: [double-economy]
 
 - title: "The Malaise Beneath the Surface in Greece - A Convergence of Crises"
   outlet: "LinkedIn"
@@ -155,6 +190,7 @@
   date: 2026-04-04
   description: "Greece's convergence of institutional crises"
   categories: [Politics, Justice]
+  series: [accountability]
 
 - title: "Greece's War on Its Own Watchdogs: The Criminalisation of Humanitarian Defenders at Europe's Border - The Olsen and Dimitras NGO cases"
   outlet: "LinkedIn"
@@ -162,6 +198,7 @@
   date: 2026-03-19
   description: "Migration and refugees: Greece's war on its own watchdogs"
   categories: [Migration]
+  series: [accountability]
 
 - title: "The Tempi Railway Disaster - Three Years of Grief, Investigation, and the Struggle for Accountability"
   outlet: "LinkedIn"
@@ -169,6 +206,8 @@
   date: 2026-02-28
   description: "A tribute to the victims and their families on the occasion of the third anniversary of the Tempi railway disaster"
   categories: [Society, Justice]
+  series: [accountability]
+  place: tempi
 
 - title: "The 200 of Kaisariani. First of May, 1944"
   outlet: "LinkedIn"
@@ -176,6 +215,8 @@
   date: 2026-02-16
   description: "The discovery of photos casts new light on the execution of Greek resistance fighters in May 1944"
   categories: [History]
+  series: [memory]
+  place: athens
 
 - title: "When Athens burned its Christmas tree. The December 2008 uprising"
   outlet: "LinkedIn"
@@ -183,6 +224,8 @@
   date: 2025-12-24
   description: "A flashback to the Christmas protests in Athens in 2008"
   categories: [Political economy, History]
+  series: [memory]
+  place: athens
 
 - title: "Cavafy’s Glasses: The Self is in the Lens, Not the Journey"
   outlet: "LinkedIn"
@@ -190,6 +233,7 @@
   date: 2025-12-04
   description: "Literary essay on the Greek author Constantine Cavafy"
   categories: [History, Literature]
+  series: [portraits]
 
 - title: "Greece’s ‘Success Story’. Economic Spin or Pierrakakis’ Eurogroup Campaign Launch?"
   outlet: "LinkedIn"
@@ -197,6 +241,7 @@
   date: 2025-11-28
   description: "The Greek “Success Story” and the Double Economy"
   categories: [Political economy, Fiscal policy, Inequality]
+  series: [double-economy]
 
 - title: "ΕΛΤΑ - Greek Mail - What is Ahead?"
   outlet: "LinkedIn"
@@ -211,6 +256,8 @@
   date: 2025-10-23
   description: "A fictional Athens café, with its owner, staff, regulars and tourists, as an allegory of how the Greek economy came to rest on low-productivity services."
   categories: [Political economy, Inequality]
+  series: [cafe-neon]
+  place: athens
 
 - title: "The Mitsotakis Doctrine: Power, Spectacle, and Simulation"
   outlet: "LinkedIn"
@@ -218,6 +265,7 @@
   date: 2025-10-18
   description: "Greek politics in a sociological perspective"
   categories: [Sociology, Politics]
+  series: [accountability]
 
 - title: "Panos Routsis and the Hunger Strike"
   outlet: "LinkedIn"
@@ -225,6 +273,8 @@
   date: 2025-10-09
   description: "The Father Who Starved the State: A Personal Vigil in the Heart of Athens"
   categories: [Politics, Justice]
+  series: [accountability]
+  place: athens
 
 - title: "Greece’s “Remarkable Recovery”: A Discrepancy Between Optimistic Projections and Lived Reality"
   outlet: "LinkedIn"
@@ -232,6 +282,7 @@
   date: 2025-07-01
   description: "The Greek “Success Story” and the Double Economy"
   categories: [Political economy, Fiscal policy]
+  series: [double-economy]
 
 - title: "From Popular Protests to Social Movements in Greece and Serbia Following Infrastructure Tragedies: A Comparison"
   outlet: "LinkedIn"
@@ -239,6 +290,7 @@
   date: 2025-04-04
   description: "Protests and social movements in Greece and Serbia"
   categories: [Politics, Justice, Sociology]
+  series: [accountability]
 
 - title: "John Maynard Keynes and the Bloomsbury Group: An Intellectual and Artistical Symbiosis in Early 20th Century Britain"
   outlet: "LinkedIn"
@@ -246,6 +298,7 @@
   date: 2025-03-31
   description: "Biographical article about the economist John Maynard Keynes"
   categories: [History, Political economy, Literature]
+  series: [portraits]
 
 - title: "Italian Architecture in the Dodecanese Islands (1912-1947)"
   outlet: "LinkedIn"
@@ -253,6 +306,8 @@
   date: 2025-01-16
   description: "Greek island history and architecture"
   categories: [History]
+  series: [islands]
+  place: [kos, leros]
 
 - title: "The “Success Story” Narrative of Greece’s Bailouts: A Discrepancy Between Ideology and Lived Reality"
   outlet: "LinkedIn"
@@ -260,6 +315,7 @@
   date: 2024-12-17
   description: "The Greek “Success Story” and the Double Economy"
   categories: [Political economy, Fiscal policy, Inequality]
+  series: [double-economy]
 
 - title: "Political Turmoil in Greece: Rifts in SYRIZA and Nea Demokratia"
   outlet: "LinkedIn"
@@ -267,6 +323,7 @@
   date: 2024-11-25
   description: "Internal uproar in the Greek political parties"
   categories: [Politics]
+  series: [accountability]
 
 - title: "Anafi - A Cycladic exile and a distant island community with a rich political and migrational history"
   outlet: "LinkedIn"
@@ -274,6 +331,8 @@
   date: 2023-07-08
   description: "Travel and history on the Greek island of Anafi"
   categories: [History]
+  series: [islands]
+  place: anafi
 
 - title: "Where women rules - Olymbos - A unique society on the Greek island of Karpathos"
   outlet: "LinkedIn"
@@ -281,3 +340,5 @@
   date: 2023-06-12
   description: "Travel and history on the Greek island of Karpathos"
   categories: [History, Feminism]
+  series: [islands]
+  place: olymbos

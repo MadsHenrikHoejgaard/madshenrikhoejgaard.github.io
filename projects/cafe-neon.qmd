@@ -1,0 +1,32 @@
+---
+title: "Café Neon"
+description: "An allegory of the Greek economy."
+listing:
+  id: series
+  contents:
+    - ../external.yml
+    - ../posts
+  include:
+    series: "cafe-neon"
+  template: ../_listing/ledger.ejs
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  A SERIES PAGE. DRAFT TEXT for you to rewrite in your own words.
+  The list builds itself: it shows every piece whose entry in
+  external.yml (or post header) has the line   series: [cafe-neon]
+-->
+
+Café Neon is a fictional café in Athens. Its owner, staff, regulars and tourists stand in for the parts of the Greek economy, and the stories use them to ask how that economy came to rest on low-productivity services.
+
+The later pieces return to the café, with a hypothesis about the structure of the Greek economy and a view from inside it of Greece's manufactured self-image. The [Double Economy](double-economy.qmd) series takes up the same question in analysis.
+
+::: {#series}
+:::
+
+[All projects](../projects.qmd)

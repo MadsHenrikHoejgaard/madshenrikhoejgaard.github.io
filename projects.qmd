@@ -1,0 +1,34 @@
+---
+title: "Projects"
+description: "The long-running threads in my writing, and where it is set."
+---
+
+<!--
+  PROJECTS PAGE.
+  The series below build themselves. Their names and summaries are in
+  _data/series.yml, and a piece joins a series through the series:
+  line of its entry in external.yml. The map at the end works the same
+  way, from _data/places.yml and the place: lines.
+-->
+
+Most of my writing belongs to a few long-running threads. Each series collects the pieces that belong together, newest first, and the map at the end shows where the writing is set when it is tied to a place.
+
+```{python}
+#| output: asis
+import sys
+sys.path.insert(0, "_scripts")
+import sitedata
+
+print(sitedata.series_overview_html())
+```
+
+## Where the writing is set {#map}
+
+The pieces that are tied to a particular place. Choose a place on the map, or read the list below it.
+
+::: {.column-page-right}
+```{python}
+#| output: asis
+print(sitedata.map_html())
+```
+:::

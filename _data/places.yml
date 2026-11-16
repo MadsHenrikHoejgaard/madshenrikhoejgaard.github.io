@@ -1,0 +1,74 @@
+# ------------------------------------------------------------------
+# PLACES ON THE MAP OF THE WRITING (Projects page)
+#
+# A piece appears on the map when its entry in external.yml (or the
+# header of a post) has a line such as   place: symi
+# A piece set in more than one place lists them all, for example
+#   place: [kos, leros]
+#
+# Each place has:
+#   id     a short name with no spaces, used in the place: line
+#   name   the name shown on the map
+#   lat    latitude in decimal degrees (north)
+#   lon    longitude in decimal degrees (east)
+#   label  where the name sits beside the dot: right, left, above
+#          or below. Change it if two names overlap.
+#
+# To find the numbers for a new place, right-click the spot in
+# Google Maps or OpenStreetMap; the first number shown is the
+# latitude, the second the longitude. The map covers Greece only.
+# ------------------------------------------------------------------
+
+- id: athens
+  name: "Athens"
+  lat: 37.984
+  lon: 23.728
+  label: left
+
+- id: tempi
+  name: "Tempi"
+  lat: 39.880
+  lon: 22.580
+  label: right
+
+- id: paros
+  name: "Paros"
+  lat: 37.085
+  lon: 25.150
+  label: left
+
+- id: ikaria
+  name: "Ikaria"
+  lat: 37.600
+  lon: 26.150
+  label: above
+
+- id: anafi
+  name: "Anafi"
+  lat: 36.357
+  lon: 25.776
+  label: below
+
+- id: symi
+  name: "Symi"
+  lat: 36.616
+  lon: 27.836
+  label: right
+
+- id: kos
+  name: "Kos"
+  lat: 36.893
+  lon: 27.288
+  label: right
+
+- id: leros
+  name: "Leros"
+  lat: 37.127
+  lon: 26.852
+  label: left
+
+- id: olymbos
+  name: "Olymbos, Karpathos"
+  lat: 35.734
+  lon: 27.170
+  label: below

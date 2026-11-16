@@ -10,7 +10,14 @@ This folder is the source of the website. Quarto turns these files into web page
 |---|---|---|
 | `_quarto.yml` | Site settings: name, address, menu, footer | Rarely |
 | `_variables.yml` | Your email and LinkedIn address | Once |
-| `index.qmd` | Home page | Sometimes |
+| `index.qmd` | Home page, with the blue band and the figures | Sometimes |
+| `projects.qmd` | The Projects page: series and the map (builds itself) | Rarely |
+| `projects/` | One page per series, and the Double Economy chart data | Sometimes |
+| `_data/series.yml` | The series: names, pages and one-line summaries | When you start a series |
+| `_data/places.yml` | The places on the map | When you write about a new place |
+| `_data/greece-map.json` | The outline of Greece for the map | No |
+| `_scripts/` | Small Python helper that counts, groups and maps the writing | No |
+| `images/` | The chalk drawing in the home page band | No |
 | `about.qmd` | About page | Sometimes |
 | `writing.qmd` | The Writing page (builds itself from your posts) | No |
 | `external.yml` | List of pieces published on other websites | Often |
@@ -29,8 +36,10 @@ Files ending in `.qmd` are ordinary text written in Markdown: `*italic*`, `**bol
 ## Add a piece published elsewhere
 
 1. On GitHub, open `external.yml` and click the pencil icon (Edit this file).
-2. Copy one whole entry, from its dash down to its `categories` line, and paste it at the top of the list.
+2. Copy one whole entry, from its dash down to the blank line after it, and paste it at the top of the list.
 3. Change the title, outlet, link (`path`), date (year-month-day), description and topics. Keep the spaces at the start of each line exactly as they are.
+   - If the piece belongs to a series, keep or change its `series:` line, for example `series: [double-economy]`. If not, delete the line.
+   - If the piece is set in a place on the map, keep or change its `place:` line, for example `place: symi`. If not, delete the line.
 4. Click **Commit changes**. The piece appears on the site in about two minutes.
 
 Write the description in your own words. Do not paste text from the original article.
@@ -70,6 +79,30 @@ Paste a BibTeX entry into `references.bib` (Zotero can export BibTeX, and most j
 ### Charts from data
 
 Put a data file such as `data.csv` in the post's folder and copy the chart code from the sample post. The code is hidden from readers. Always name the dataset and release in the caption.
+
+## Series and the Projects page
+
+The Projects page groups the writing into series and builds itself. A piece joins a series through the `series:` line of its entry in `external.yml` (or in the header of a post). The series ids are `double-economy`, `cafe-neon`, `accountability`, `memory`, `islands` and `portraits`. A piece can belong to more than one: `series: [memory, islands]`.
+
+To start a new series:
+
+1. Open `_data/series.yml`, copy one entry and give it a new `id` (short, no spaces), title, page and summary.
+2. Open one of the small series pages in `projects/`, such as `projects/portraits.qmd`, copy its contents, and create a new file in `projects/` named after the id, for example `projects/elections.qmd`. Change the title, the text and the id in the line `series: "portraits"`.
+3. Add `series: [elections]` to the pieces that belong to it.
+
+## The map of the writing
+
+The map at the end of the Projects page shows the places listed in `_data/places.yml`, with the pieces whose entry has a matching `place:` line. To add a place, copy one entry in `_data/places.yml`, give it an id, a name and its latitude and longitude (right-click the spot in Google Maps or OpenStreetMap to see them), then use the id in `place:` lines. If two names overlap on the map, change `label:` to `left`, `right`, `above` or `below`.
+
+The outline of Greece comes from Natural Earth (public domain) and is stored in the site, so the map loads nothing from other websites.
+
+## The Double Economy page
+
+`projects/double-economy.qmd` has the framework text, the diagram of the four channels and the chart. The chart reads `projects/data/housing-overburden.csv`: one row per year and area, taken from Eurostat's dataset ilc_lvho07a (housing cost overburden rate). In the `flag` column, `e` means Eurostat marks the value as an estimate. When Eurostat publishes a new year, add two rows (Greece and EU) and check the year range and the date in the chart caption in `double-economy.qmd`.
+
+## Figures on the home page
+
+The number of articles under the blue band is counted automatically every time the site is built. The other three figures are written in `index.qmd`, in the block that starts with `print(sitedata.tally_html(`. Change the number or the words between the quotation marks.
 
 ## Check that a change worked
 

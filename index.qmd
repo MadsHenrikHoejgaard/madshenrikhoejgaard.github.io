@@ -1,6 +1,8 @@
 ---
+title: "Mads Henrik Højgaard"
 pagetitle: "Mads Henrik Højgaard"
 title-block-style: none
+body-classes: home
 image: portrait.jpg
 image-alt: "Portrait of Mads Henrik Højgaard"
 listing:
@@ -17,6 +19,16 @@ listing:
   filter-ui: false
 ---
 
+<!--
+  HOME PAGE.
+  The deep blue band at the top takes its colours from your LinkedIn
+  banner. Your name, the line under it, the introduction and the photo
+  sit inside it. Edit the words freely; keep the lines starting with
+  ::: as they are, because they open and close the parts of the page.
+-->
+
+::: {.column-screen .board .hero-band}
+::: {.board-inner}
 <h1 class="hero-name"><span>Mads Henrik</span><span>Højgaard</span></h1>
 
 ::: {.hero .hero-with-photo}
@@ -27,7 +39,9 @@ listing:
 ::: {.hero-intro}
 My academic and journalistic work is focused on contemporary Greek society, politics and economics, with a background in global studies, migration politics and international relations. I am a deeply curious human with a constant need to take in new knowledge and to analyze and learn.
 
-[More about me](about.qmd)
+::: {.hero-links}
+[More about me](about.qmd) [The Double Economy](projects/double-economy.qmd)
+:::
 :::
 :::
 
@@ -36,6 +50,32 @@ My academic and journalistic work is focused on contemporary Greek society, poli
 :::
 
 :::
+:::
+:::
+
+<!--
+  FIGURES UNDER THE BAND.
+  The number of articles is counted automatically from your lists of
+  writing every time the site is built. The other three are written
+  here: change the number or the words between the quotation marks.
+-->
+
+```{python}
+#| output: asis
+import sys
+sys.path.insert(0, "_scripts")
+import sitedata
+
+pieces = sitedata.writing()
+first_year = min(p["date"].year for p in pieces)
+
+print(sitedata.tally_html([
+    (len(pieces), f"articles and essays since {first_year}", "writing.qmd"),
+    ("25+", "years in operational management, consultancy and project management", None),
+    ("5", "years at Are You Syrious, 2018–2023", None),
+    ("55+", "years old when I completed my MSc in Global Studies, 2019", None),
+]))
+```
 
 ## Areas of work
 

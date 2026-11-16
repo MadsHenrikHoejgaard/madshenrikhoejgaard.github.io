@@ -1,0 +1,30 @@
+---
+title: "Portraits"
+description: "Artists, writers and activists."
+listing:
+  id: series
+  contents:
+    - ../external.yml
+    - ../posts
+  include:
+    series: "portraits"
+  template: ../_listing/ledger.ejs
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  A SERIES PAGE. DRAFT TEXT for you to rewrite in your own words.
+  The list builds itself: it shows every piece whose entry in
+  external.yml (or post header) has the line   series: [portraits]
+-->
+
+Biographical and literary essays on artists, writers and activists: the painter Alekos Fassianos, the poet Constantine Cavafy, the activist Paola Revenioti, and the economist John Maynard Keynes among the Bloomsbury Group.
+
+::: {#series}
+:::
+
+[All projects](../projects.qmd)

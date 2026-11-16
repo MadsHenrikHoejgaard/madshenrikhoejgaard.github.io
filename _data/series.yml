@@ -1,0 +1,44 @@
+# ------------------------------------------------------------------
+# SERIES ON THE PROJECTS PAGE
+#
+# Each series has:
+#   id       a short name with no spaces. A piece joins the series
+#            when its entry in external.yml (or the header of a post)
+#            has a line such as   series: [islands]
+#   title    the name readers see
+#   page     the page of the series, in the projects folder
+#   summary  one or two sentences for the Projects page
+#
+# The order here is the order on the Projects page. The first series
+# is shown larger than the others.
+# ------------------------------------------------------------------
+
+- id: double-economy
+  title: "The Double Economy"
+  page: projects/double-economy.qmd
+  summary: "The discrepancy between Greece's macroeconomic success and the lived experience of its population, followed through surpluses, rents, banks, taxes and the islands."
+
+- id: cafe-neon
+  title: "Café Neon"
+  page: projects/cafe-neon.qmd
+  summary: "A fictional café in Athens, with its owner, staff, regulars and tourists, as an allegory of how the Greek economy works."
+
+- id: accountability
+  title: "Power and accountability"
+  page: projects/accountability.qmd
+  summary: "Spyware, the Tempi railway disaster, the prosecution of humanitarian defenders and the state of the press: how Greek institutions answer for the use of power."
+
+- id: memory
+  title: "History and memory"
+  page: projects/memory.qmd
+  summary: "The German occupation and its unsettled accounts, from the executions at Kaisariani to war reparations, and the December 2008 uprising in Athens."
+
+- id: islands
+  title: "Islands"
+  page: projects/islands.qmd
+  summary: "Island societies observed up close, through their history, their economies and the commons they depend on."
+
+- id: portraits
+  title: "Portraits"
+  page: projects/portraits.qmd
+  summary: "Biographical and literary essays on artists, writers and activists."

@@ -1,0 +1,32 @@
+---
+title: "Islands"
+description: "Island societies observed up close."
+listing:
+  id: series
+  contents:
+    - ../external.yml
+    - ../posts
+  include:
+    series: "islands"
+  template: ../_listing/ledger.ejs
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  A SERIES PAGE. DRAFT TEXT for you to rewrite in your own words.
+  The list builds itself: it shows every piece whose entry in
+  external.yml (or post header) has the line   series: [islands]
+-->
+
+Island societies observed up close. The pieces combine travel, history and political economy: the women of Olymbos on Karpathos, exile on Anafi, Italian building in the Dodecanese, water and tourism on Symi, and degrowth on Ikaria.
+
+The [map on the Projects page](../projects.qmd#map) shows where each piece is set.
+
+::: {#series}
+:::
+
+[All projects](../projects.qmd)

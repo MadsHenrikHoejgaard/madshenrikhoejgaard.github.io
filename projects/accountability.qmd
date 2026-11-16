@@ -1,0 +1,32 @@
+---
+title: "Power and accountability"
+description: "How Greek institutions answer for the use of power."
+listing:
+  id: series
+  contents:
+    - ../external.yml
+    - ../posts
+  include:
+    series: "accountability"
+  template: ../_listing/ledger.ejs
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  A SERIES PAGE. DRAFT TEXT for you to rewrite in your own words.
+  The list builds itself: it shows every piece whose entry in
+  external.yml (or post header) has the line   series: [accountability]
+-->
+
+Pieces on how Greek institutions answer, or fail to answer, for the use of power: the Predator spyware case, the Tempi railway disaster, the prosecution of humanitarian defenders at the border, and the state of the free press.
+
+Several follow the people who refused to let a case close.
+
+::: {#series}
+:::
+
+[All projects](../projects.qmd)

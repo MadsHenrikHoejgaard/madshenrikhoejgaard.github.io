@@ -1,0 +1,32 @@
+---
+title: "History and memory"
+description: "The occupation and its unsettled accounts."
+listing:
+  id: series
+  contents:
+    - ../external.yml
+    - ../posts
+  include:
+    series: "memory"
+  template: ../_listing/ledger.ejs
+  sort: "date desc"
+  date-format: "D MMM YYYY"
+  fields: [date, title, description, outlet]
+  sort-ui: false
+  filter-ui: false
+---
+
+<!--
+  A SERIES PAGE. DRAFT TEXT for you to rewrite in your own words.
+  The list builds itself: it shows every piece whose entry in
+  external.yml (or post header) has the line   series: [memory]
+-->
+
+The German occupation and its unsettled accounts: the executions at Kaisariani on 1 May 1944, the #StolenMemory project, the question of war reparations, and a wartime story from Paros.
+
+The December 2008 uprising in Athens belongs here as a more recent memory.
+
+::: {#series}
+:::
+
+[All projects](../projects.qmd)

@@ -7,6 +7,15 @@ $teal: #4FB3C4;      // links, rules (lightened for dark backgrounds)
 $gold: #B8975A;      // accent, unchanged
 $slate: #A3ADB8;     // secondary text (slate lightened for contrast)
 
+// The board: the deep blue and chalk white of the LinkedIn banner.
+// Used for the menu bar, the band on the home page, the diagram and
+// the map. The same in light and dark mode.
+$board: #000549;       // deep banner blue
+$chalk: #EEEBE3;       // chalk white
+$chalk-muted: #B4BBD3; // chalk, softer
+$chalk-link: #8ED3E3;  // links on the board
+$glow: #109CC4;        // the turquoise glow
+
 $body-bg: $night;
 $body-color: $paper;
 $link-color: $teal;
@@ -24,9 +33,9 @@ $callout-color-note: $teal;
 $code-color: $paper;
 $code-bg: rgba($paper, 0.08);
 
-$navbar-bg: $night;
-$navbar-fg: $paper;
-$navbar-hl: $teal;
+$navbar-bg: $board;
+$navbar-fg: $chalk;
+$navbar-hl: $chalk-link;
 $footer-bg: $night;
 $footer-fg: $slate;
 
@@ -40,5 +49,10 @@ $footer-fg: $slate;
   --mh-tint: #{rgba($teal, 0.18)};
   --mh-bg: #{$night};
   --mh-rule: #{rgba($paper, 0.16)};
+  --mh-board: #{$board};
+  --mh-chalk: #{$chalk};
+  --mh-chalk-muted: #{$chalk-muted};
+  --mh-chalk-link: #{$chalk-link};
+  --mh-glow: #{$glow};
   --mh-plate-border: #{rgba($paper, 0.10)};
 }
